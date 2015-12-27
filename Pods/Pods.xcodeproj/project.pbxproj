@@ -1,0 +1,1529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02D89BE294B12D477026737C5D87033D /* RKMappingOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDE930C2234BBEB198BCB8EE6297277 /* RKMappingOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		040839E2BE5CBDAAFB4B1E077885AA23 /* RKResponseDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EF3B87E9C90977A2758595E965186E9 /* RKResponseDescriptor.h */; };
+		05E9E9A15AD4268CC91531FD5332C3DF /* RKObjectRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = A7A450B774F993CE9871A3DD784C092C /* RKObjectRequestOperation.h */; };
+		070347FEEDA6202600B2172CDF885025 /* RKManagedObjectImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7B6E1BF031FA1E3097FFF717E98133 /* RKManagedObjectImporter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		09CEDE6FB92CC4CC92DFB8958642F7D8 /* NSManagedObject+RKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CF829CDD3C48184E3BD48800762A0E /* NSManagedObject+RKAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0B4FABB3025D28EC73FF4C6B4F80D97B /* RKObjectManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BD2CC4E12142220EA76BDE755A2674B /* RKObjectManager.h */; };
+		0C0230479F62A54DFF308DB4E2A75A51 /* RKURLEncodedSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D5E5D0E723FEB82A4906E21D24CFF4 /* RKURLEncodedSerialization.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0D1F569D4E3D29E1BB213C566AD19A92 /* RKNSJSONSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 0592F2E9506F761FD1AD98DB9BAD22BA /* RKNSJSONSerialization.h */; };
+		0D696124B78E63DA891A1B1B4CCA1137 /* RKDynamicMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = B6346D2EEE428462F7FD10A395D037A5 /* RKDynamicMapping.h */; };
+		10B92A51DBAE29AC9569536B2BA73385 /* RKOperationStateMachine.h in Headers */ = {isa = PBXBuildFile; fileRef = E81D9781D697890D1D58DE1DC8015BE1 /* RKOperationStateMachine.h */; };
+		110EE4DAB6591F217C8B603775D92820 /* RKValueTransformers.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CD5BA383E50BECE0D2E569D377E3D1 /* RKValueTransformers.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		13122F7157228E9BA4A2750224EDE16A /* RKPathMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 63E7EFDFA442DA79F8FBD79B5ECF54A5 /* RKPathMatcher.h */; };
+		149387570D8081AD3BD518BA096590B5 /* RKManagedObjectCaching.h in Headers */ = {isa = PBXBuildFile; fileRef = 2704A6B7687C897B7987A521F8525652 /* RKManagedObjectCaching.h */; };
+		19727379D398B5E29E1A9C7D88CABF71 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 790A435C949F0964A302611CDAAD2792 /* AFPropertyListRequestOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1C78C9880036DC83D1D60EE7295F2AD9 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C1ED332D2B386DA8BB2B7A604AAD98 /* AFJSONRequestOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1FAAC965AB8D9E0EA552259B6001674B /* RKPaginator.m in Sources */ = {isa = PBXBuildFile; fileRef = 438ED0996C0BED106575FF68A1610841 /* RKPaginator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1FC88DA09076785A6E404CCECB55BBB1 /* RKMappingErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EDF9209D453079A6EE99C84CD546F61 /* RKMappingErrors.h */; };
+		22BFC61B09C79D5F08A8D99CAE27F521 /* TKState.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CF5E1E55E788ECE32C445B2B78632D /* TKState.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		26E07C2942CEF4E1445BE723E7E339D2 /* lcl_config_logger_RK.h in Headers */ = {isa = PBXBuildFile; fileRef = 81DE187DB8EDBAF4253FEAC14D9AAABA /* lcl_config_logger_RK.h */; };
+		2A585FC4FA4B06614EDD28D7CEF1C9A5 /* RKObjectMappingOperationDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = D3B947BA9A9A64A1E987777B3DD75DB1 /* RKObjectMappingOperationDataSource.h */; };
+		2C3E7CB8F586A3CFDDCDAF80FD5DBC17 /* RKISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 40AD061A150E8E8FDE1E306FA9C5F9D5 /* RKISO8601DateFormatter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2D0DDBC7E9F32ADFA12D6BC74B988EAC /* RKEntityCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 95FE48ECF822B5698A14F0548CA15736 /* RKEntityCache.h */; };
+		2D3A825F2066A97844B00DED46D1AFB5 /* RKMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A50A500482DB811E42A641962AE229D /* RKMapping.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2EF01DD452F931DF0878FB899EF2EA89 /* RKObjectParameterization.h in Headers */ = {isa = PBXBuildFile; fileRef = 5612BF6C1EFBD9EFF7D9A93D16C4C4AA /* RKObjectParameterization.h */; };
+		314C344D55BEF1920C341CBEA3DFC19F /* RKRelationshipConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = A74791EB9B9C33FDB3E254695E2FAF58 /* RKRelationshipConnectionOperation.h */; };
+		31EA1C7A03BBDBDF5CE7CD6F32507DED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1DDBE6FFC3BE7052C203A4A205C2383 /* Foundation.framework */; };
+		3597447EE64357BAFDAEA3043953CFCA /* RKPathMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E89EE8DC55A21754CF9396B1167B650 /* RKPathMatcher.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		35C1DC23FC341D8E915FAA2C0D2C7ADE /* TKEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE7907E67E85FC4E3CD2A4810772030 /* TKEvent.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		362FE599782174A5B4F410255EB3E0E0 /* NSManagedObjectContext+RKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 20267AE881DABAA87AD979B232E2C4E8 /* NSManagedObjectContext+RKAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		382B91C8BC56760020BA7FD8F92F80B2 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AC912ACD90DCC59FEE8E31740BDCE5 /* AFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		395DEE05F85ACC4693B739A6CEDF7D1D /* RKEntityMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = F5352FF18975CDB3F01BCE5F26351C29 /* RKEntityMapping.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		39D96ECB3324FC6929C0B77CD414C3C7 /* RKLog.m in Sources */ = {isa = PBXBuildFile; fileRef = E676AABBAEF82BE6C6B9CE746FBA5D75 /* RKLog.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		39DBD867F88EF67426FC4C9C72264129 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 459E5C0E413C21937E5D65E4DA13EBEE /* AFNetworkActivityIndicatorManager.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3A2A2A1D59E3C90BC73A85AF6BC8A80B /* RKRouteSet.h in Headers */ = {isa = PBXBuildFile; fileRef = FD9084188651009B7D0DB39A460A4896 /* RKRouteSet.h */; };
+		3BB33B38A35AF45DA1BFF1B278A6E043 /* RestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A70CF294D236CBA7374FD6AD287ED41 /* RestKit.h */; };
+		3D08F5922C76BAAB8F4F1D9D6E53F7CB /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3465F41EA2400B37708263E18B49B6 /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3DE3496E7E88EFE070FB7D428575C0F1 /* RKRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = E1382B425FD556CE76BE9B1ED95642F8 /* RKRouter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3E998CF9B10DF1C4896E0200CF8F0D84 /* RKObjectMappingMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEFE40387483923AB3A63FF4C80CCD1 /* RKObjectMappingMatcher.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		400B89318102687DFC8588B18DF82162 /* RKConnectionDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = B20E142C92D63FE773B0789BC1891BDE /* RKConnectionDescription.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		420486885FB74B0AC5C30A6FC91A6A20 /* RKEntityByAttributeCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D7992F0664F3A879AE2EBB8D24570E2B /* RKEntityByAttributeCache.h */; };
+		430B54508FF844031E6FFCCF142AEC84 /* AFHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 34BB5F5855B59D16D43EAD5DA7CC24FE /* AFHTTPClient.h */; };
+		44EEBB71B919C890EC133515DAADA53E /* SOCKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 96A98B34414903617DDCC4DD35D0ACC8 /* SOCKit.h */; };
+		46CA6882AD91C96A8A110FFE43200736 /* RKEntityCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6B030142A2FE118236D4D554A33427 /* RKEntityCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4843C1B0ED00B08E293B87F069EA2CCC /* RKHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BB7330D8497EF9B189C392B2B4B07F8 /* RKHTTPRequestOperation.h */; };
+		4932C37F5B56BB3E92CF149544E22903 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C923E83DEF45FA270F6DA061308BECD0 /* Security.framework */; };
+		4C468D908122718B85D3DD6C383FD534 /* RKMIMETypeSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD7B2395FFB2A828D4A1CA950A8FF60 /* RKMIMETypeSerialization.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4D55B2B4321B8BD868F600BB71A70FE2 /* RKResponseMapperOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E725EC4F94ACE6E043ED02E961840F7 /* RKResponseMapperOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4F39FDEB07063CA4256537EB4ECFAD10 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C923E83DEF45FA270F6DA061308BECD0 /* Security.framework */; };
+		4FE14B275E3150F8939E7670DE14CEC4 /* RKOperationStateMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 062779499AAD108B9084D72C43BCE433 /* RKOperationStateMachine.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		53539FCD6DA17C287099604A036B579D /* RKFetchRequestManagedObjectCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B1A63F7A5BB9EB5825A3E64BA93790 /* RKFetchRequestManagedObjectCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		53C189EB4CDF0D4489AC15B740E3B512 /* RKMappingResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 764A0F8EF15CD202361039870FAE935D /* RKMappingResult.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		53E6B32AF6CB988E5330A54058AD268B /* RKHTTPUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CF6177AF4E34E584D831DC351993F7 /* RKHTTPUtilities.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		54FD41E5A38D2590C69BA98727DB35CC /* TransitionKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DBF74A26D98E002F72EC9BF9EE8CF88 /* TransitionKit.h */; };
+		56562862D100917FE0D243A7E41F3B24 /* RKEntityMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = E95D8D1A85D8A2C951A98F2B09B1D8E9 /* RKEntityMapping.h */; };
+		5A28F6F8A1FF0A077C65D8B7E2F1FAEF /* RKObjectParameterization.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FBB2AAAFD66E8B9A20D2A256504413 /* RKObjectParameterization.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5C414D0ABBD3181938C5F46325B7A9D0 /* RKObjectMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D21D745BE5B33F1F1AA929FEE9F285 /* RKObjectMapping.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5D508A3891FACA8FB8D58412B8B683A9 /* LCLNSLog_RK.h in Headers */ = {isa = PBXBuildFile; fileRef = B13A506D9E78C61D164173059E7CEE77 /* LCLNSLog_RK.h */; };
+		5F1D0ABBA332328214025CB3BA1CB18B /* TKState.h in Headers */ = {isa = PBXBuildFile; fileRef = 148F1E6E44AD2F1F5F390EE08DACEEB7 /* TKState.h */; };
+		5F3D9AEEE760BF9FA3B82A9F1A8DFECB /* RKResponseDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BF49617E30C6A614B61A1527262F23AC /* RKResponseDescriptor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		60114CED591C25CB18E49F7209B53399 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E122CC2FA4220A705DE30BDC8A47D7B2 /* AFURLConnectionOperation.h */; };
+		6504EB1DC5A89849B741915ED383ADAE /* RKErrorMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = BD080EBB7F089DF722A7CF444A997AE4 /* RKErrorMessage.h */; };
+		65AA74C75740B0BE7A6BBBB4D4AE9DD7 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 98ECCCAEFB9CB0B63A19FC02F5564E8E /* AFNetworking.h */; };
+		67E512B373D05D8012BE207E3177BCFD /* RKMIMETypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E503ED6E055CCAEB8E9EA9226BA1CD /* RKMIMETypes.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		67F2940C6D5C9505438BC4AA77C72B67 /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0367CFB43104DABD17D2607A2CFF83 /* AFNetworking-dummy.m */; };
+		6853E5B824097C033FBC79726449CE82 /* lcl_config_extensions_RK.h in Headers */ = {isa = PBXBuildFile; fileRef = 962B4FD5E59F444A48C86AF6986C86CE /* lcl_config_extensions_RK.h */; };
+		694838E2D70914799850367042AA0451 /* RKManagedObjectMappingOperationDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E36ACE9143C2AFBD9073DCA0DC8F1B4D /* RKManagedObjectMappingOperationDataSource.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6ACB69DF19D66A70663793255C9DB308 /* TKEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = A4A680F7D1ECDC94C58E9A54FA04578A /* TKEvent.h */; };
+		6CE71B165CD4ECA7B15C59352AC84D86 /* RKPathUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = E7F39151205CE958EA5685375E4D45C8 /* RKPathUtilities.h */; };
+		6D10724F0733C72C652F050FB33A3B2C /* ObjectMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = F9023C724A74CDF23BBE3EE5ACF5239C /* ObjectMapping.h */; };
+		6FC86F36770EBDAF446CC83FB714842E /* RKRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C140A71701D26492F6A2C88FF41D6C9 /* RKRoute.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		71E1E547CA889011D53DDCF9A0E1953B /* RKAttributeMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = EF656853ED1ED3B2AA339AF54940DC6D /* RKAttributeMapping.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		756438993C17D23A4A9F2D3F1514A856 /* RKMIMETypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 274517D33C7A0D639A19B3A232CEB3C9 /* RKMIMETypes.h */; };
+		7859CC31620D4E4D055D9F60BAF30265 /* RKDictionaryUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = D1E2475209CA72C7EA50B63826705077 /* RKDictionaryUtilities.h */; };
+		7A8B705B7AFD631F42CAD3943D2D7801 /* RKResponseMapperOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = D41E4ABA2D97DDEB089BAF6986A8D53A /* RKResponseMapperOperation.h */; };
+		7AA9CFB7FEBEE23E295D0019CAA3BCC2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F38E5FC8E986467DB0DD1429904B1AA /* CoreData.framework */; };
+		7AB7DD6285CC6EC861015B91631D52A2 /* RKPaginator.h in Headers */ = {isa = PBXBuildFile; fileRef = C5A9E86C01761B541B1FE4B4AB12F8F7 /* RKPaginator.h */; };
+		7B8988B83D2CA254D830BDCE50F50647 /* RKDotNetDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 41133C938B0260349E006498CD38BCE1 /* RKDotNetDateFormatter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7BEDBF67D16202722DF3D242D782E1F2 /* AFJSONRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D83439F2E3A675606AE7A2095BF48C3 /* AFJSONRequestOperation.h */; };
+		7BF2C631259BEA355F2B1A4D6E06272F /* RKObjectUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DF8A29DD8334C8C4087C88E7D718BEA /* RKObjectUtilities.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7BFDE5E643616D3C15E1022E34F204ED /* RKValueTransformers.h in Headers */ = {isa = PBXBuildFile; fileRef = B30F258438DB91647461DA1B08DAB44A /* RKValueTransformers.h */; };
+		7C49FE763DFADDDA8EB752F30D7A7EB8 /* RKErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = A566D50814933723B560516065388785 /* RKErrors.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7CF0747CC595851B71817279B0053179 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 179DEF6FC8BBB9AA12896F2895C86927 /* UIImageView+AFNetworking.h */; };
+		7D22BAE286A5D6157BC6CD302D818783 /* RKRequestOperationSubclass.h in Headers */ = {isa = PBXBuildFile; fileRef = CA5590590675F3A11309924F077C122F /* RKRequestOperationSubclass.h */; };
+		7DC80C251935D5C0A6757261318BA8AB /* RKRelationshipMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 706877871DFDC40332B5138E64C33319 /* RKRelationshipMapping.h */; };
+		7F78BD3202930A455F4390396DEECEE6 /* Network.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D5CBE7AC27C7C2FF88466F719680C84 /* Network.h */; };
+		8039D4F7C97981D7FED45E19B9C49422 /* RKObjectMappingMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 8023982E8F170D0940564C237D75DCA5 /* RKObjectMappingMatcher.h */; };
+		8105B9CA801CFD73FD43B95B7D02649A /* RKHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E7038ACB754F5B53D088A6CBF7AD1B35 /* RKHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		83CABA088DF152D1E60EA8889A61C0F3 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 02678B277439AC2B2F46125069D4F97B /* AFHTTPRequestOperation.h */; };
+		8727136B59404A20F516B7A42F0CDD33 /* RKMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 31D6F69CA0581D58F0D270851E9738C6 /* RKMacros.h */; };
+		8732A6715C7A35F2716784A9B5C64198 /* RKObjectMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 290709614A4BB4412DAD446930B69E7B /* RKObjectMapping.h */; };
+		88934B5C4D87F8520E0552464442BEBB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6125ABEBC1DA76F369DE1378E0C4840 /* MobileCoreServices.framework */; };
+		88E164EE5955F9DD9120F2DF89079DD8 /* RKPropertyInspector+CoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = 800F506596FA78A8E09059FC9AA3D369 /* RKPropertyInspector+CoreData.h */; };
+		8E458A744E15BABABCE0B2AAA05CA749 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6125ABEBC1DA76F369DE1378E0C4840 /* MobileCoreServices.framework */; };
+		8E50BD3653E718BE147C78E4E23DB006 /* RKMappingOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FADF84FC03373294412BE3F4853BC157 /* RKMappingOperation.h */; };
+		8F56AA3253ACE07AB1FBA8EFB93C5A76 /* RKObjectMappingOperationDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 79621DA6B3F9EB0F1D28217A04323AB9 /* RKObjectMappingOperationDataSource.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9394B8D958E0D1545F0D21090DA090AC /* RKDynamicMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = A57B9A873260DFE90DD408E4C1AE4E13 /* RKDynamicMapping.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9586046250659E0210D0AD4E0C35AF70 /* lcl_config_components_RK.h in Headers */ = {isa = PBXBuildFile; fileRef = 369E7D47A80FD4BF03E148201402A1A6 /* lcl_config_components_RK.h */; };
+		96EB3733B1A9497107314C41CA38979E /* RKPropertyMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 325105434D415948B9DB589B0086CC6A /* RKPropertyMapping.h */; };
+		982BA8E42AB025F38E6576424E87798C /* RKRouteSet.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB0DAE5AEDD23884AD8407058457E5E /* RKRouteSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9C8C296F501CE897F584A9CA96A55410 /* RKPropertyInspector+CoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = F23FCF9D26398230D13F9D59DD5B2CA2 /* RKPropertyInspector+CoreData.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9CE2D36EC4FA80719B383A05C77B4E23 /* Pods-Meteo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8ABFE01676FDF0A10715590EEB76E4 /* Pods-Meteo-dummy.m */; };
+		9D52BBD20E91D08DD9F17F34ECBAF1C8 /* TransitionKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0B8A86662BAF073B0DD514BD38CE69 /* TransitionKit-dummy.m */; };
+		9E1AAF8FCCC6ABB76ED2E6B7392622EB /* AFPropertyListRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 79540B3FFADC0AE12E9E3B53416485A0 /* AFPropertyListRequestOperation.h */; };
+		9E2C8197821794E7D72C90F6B79BAE4C /* AFImageRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 12621C611AAE3F1230A43C0582093FD9 /* AFImageRequestOperation.h */; };
+		9FC4D6D7A2BD15A14476E0AE133CD13E /* RKManagedObjectStore.h in Headers */ = {isa = PBXBuildFile; fileRef = B33A7C81B155DD236E664E5C205CA3EB /* RKManagedObjectStore.h */; };
+		A03A7EBEED26A40DE674E68F3CFD0B4A /* RKMapperOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AD92583A2B861A434D1B551B39EF18F /* RKMapperOperation.h */; };
+		A0F5DB109A9AFF7ECDB3D5C541BC62D5 /* RKManagedObjectMappingOperationDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A59C4A325D09AD7F240C0D28E52B7C2 /* RKManagedObjectMappingOperationDataSource.h */; };
+		A3863C8B2256453580138E3C35ED1BB4 /* RKObjectUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FEC34C498531C87A8B1556A7E1057D1 /* RKObjectUtilities.h */; };
+		A5440219EB91F2FE190C2BC45F7D9AF5 /* TKStateMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DC31A9F1A34A204D740109D0FAAD2E /* TKStateMachine.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A6FBD8CAB6AD469A511BB6BBC24E23FE /* RKFetchRequestManagedObjectCache.h in Headers */ = {isa = PBXBuildFile; fileRef = DB93842767A7FFFDC7A62B828C69DCFA /* RKFetchRequestManagedObjectCache.h */; };
+		A74FC64B0A119C2C622D113F3148006E /* lcl_RK.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FA7D3103B52D3743DBB57666B9A3B8 /* lcl_RK.h */; };
+		AAAE560E85E1BFA6743338561F465A01 /* RKManagedObjectRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 308B30F0A5ACC20095735C18097A2ACC /* RKManagedObjectRequestOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AB4DA060BFCC0F139269418990F583AA /* RKMappingResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 73282929762630CC3F2C94DC7D4E8AC4 /* RKMappingResult.h */; };
+		AED7DD46159F1525CBAED2B765B6FBB2 /* SOCKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE09EB1BAFD6593655A66644AD9F2C0 /* SOCKit-dummy.m */; };
+		B16834950DD573C7C0BA0ED504943096 /* CoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA34C366A1F9FE35B0E4C061A9305F6 /* CoreData.h */; };
+		B2105F89B69E6842DFBC143EDDDD49F9 /* RKObjectRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5AD7A722E3E4CDC5C24AD9A38489B8 /* RKObjectRequestOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B2AC7F664BBB238518D899249C9F5CB2 /* RKRequestDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C88FC8F6334EE921AA43E8D8BD5C71C /* RKRequestDescriptor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B6FAA58163F06BAB4E3A66372E337A55 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E74C122660185D780701DAC5AAB96A /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B8320E8A8DE37B6FF131081268F8FC8E /* RKLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 7998A464D017359BEE65FEBB90496888 /* RKLog.h */; };
+		B96F691F22FAF58BD9E7FB2A7708B587 /* RestKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE45345A6C8D1AAE5C40C95B2B27C12 /* RestKit-dummy.m */; };
+		BA59F995BDBE8169C71B0DF19DFE8C84 /* RKRequestDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C15E2D197B323AEF65B3F3BFC454EE6 /* RKRequestDescriptor.h */; };
+		BBD60540B2E3A07D7AC2128F3ED6BDCC /* RKDotNetDateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4225EAAD37AA1DF99662143882F16CEA /* RKDotNetDateFormatter.h */; };
+		BD5BEEE47EE4CE80620EDBC04F96764C /* RKPathUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA4CD7317D79DA62CC640E4A6F1017B /* RKPathUtilities.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BD86D4F33FBC1B7B962F993B298220D7 /* LCLNSLog_RK.m in Sources */ = {isa = PBXBuildFile; fileRef = 0862109943F04269783713C11D45FE98 /* LCLNSLog_RK.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BE6AD2E5F8A524E899C3AA4A26B6CD68 /* RKNSJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 9328A45696944593EB5C01FBC984B844 /* RKNSJSONSerialization.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BF6024B8E7C12A48DA5AB79DFF74A25C /* RKISO8601DateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7359390255933B5B9D578F1BC8E22F04 /* RKISO8601DateFormatter.h */; };
+		C0828D63B30DCBA39CF79AADDCBE6343 /* RKURLEncodedSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CD57368E2225672B93A873EB6B8777C /* RKURLEncodedSerialization.h */; };
+		C1DE2B68741B00D15B6329A2229D6CC9 /* RKEntityByAttributeCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B8A5E1F6FEF6F8BC9671B52E95EA5A /* RKEntityByAttributeCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C2406F161CC120D07B885E6D8D930DB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1DDBE6FFC3BE7052C203A4A205C2383 /* Foundation.framework */; };
+		C43890E907CA5F03660DA2BF9365D9E0 /* RKManagedObjectRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E489F7FCB7D89DEEFD683E5BF7954444 /* RKManagedObjectRequestOperation.h */; };
+		C4B7C53CC4AB2DA551D9A5C6E57DC66C /* NSManagedObjectContext+RKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 848F96025A84FFA39D639FA31C723FBF /* NSManagedObjectContext+RKAdditions.h */; };
+		C524F7D01A45A3D670CF4FCAE810AD87 /* RKManagedObjectStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 963BE87273F42A3CFC957F88D771DD78 /* RKManagedObjectStore.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C8BF225550DD06004314CF072399AA80 /* RKHTTPUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E25BDCB5FA465737C8E28D11D8857FF /* RKHTTPUtilities.h */; };
+		C91B7943E220EBB47F7D56380D2D0762 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 951E7595147E1F71FA0ED4F4EB2C2AB6 /* AFImageRequestOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C9F1F1E835307193F31476112730717A /* Testing.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F55A3F278CEF193E35C07E1F55DD3A6 /* Testing.h */; };
+		CDB3B23FC97C1A23CA86D0B35FD14F5F /* lcl_RK.m in Sources */ = {isa = PBXBuildFile; fileRef = A2208F207646CBFE2DCC8C6CB01C0748 /* lcl_RK.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CDC1514EB939F8216FD693C6C6A1EE1F /* RKObjectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A81877736D20CE86FF5CC1DAAADEA0 /* RKObjectManager.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CF29BD7AB16D83A37732955664BC85ED /* RKMapperOperation_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F029FE96A6A2050419CCC131198A66 /* RKMapperOperation_Private.h */; };
+		CFCCF72FC9B5D31721B9389145170AA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1DDBE6FFC3BE7052C203A4A205C2383 /* Foundation.framework */; };
+		D0A3F1653721FD4699DABF3AB35D5057 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427BD3537D0EBA10549EC696CEDA6342 /* CFNetwork.framework */; };
+		D0BCD43C36A8B60B4845C05155C908B5 /* RKInMemoryManagedObjectCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A44F9358FE2D15B6E68DB6599CF69D3 /* RKInMemoryManagedObjectCache.h */; };
+		D0CFDEED028603B09A2F60EEDDB1A64F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1DDBE6FFC3BE7052C203A4A205C2383 /* Foundation.framework */; };
+		D365E898441E6F38C34169E9F9DFE8B8 /* RKMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 3910FCFC692105013DABCDB1ABABC2E3 /* RKMapping.h */; };
+		D51C1B3AD96672B1E6CCE25EEE1FC0A0 /* RKDictionaryUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5C397CB33F17ABDDFF90CEC1735954 /* RKDictionaryUtilities.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D52F8FD8932A0FF052BECCC49EC34DB0 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 18592ABFE20918FA4D181FDA5CC049EB /* AFNetworkActivityIndicatorManager.h */; };
+		D999061E6D9187E7736217BBE0D24C8D /* RKPropertyMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = D991B30E9A80489AD29E270A6C82C6D9 /* RKPropertyMapping.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DA1EC3040171DCBC74319307445420D8 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C5D952C5C4B16A4A95BB58E382884F /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DB994907F657A6C3C7530C7B9F50F514 /* RKInMemoryManagedObjectCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4E3E3E5CCCC2215AD7B7265E5441EC /* RKInMemoryManagedObjectCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DC4721895184FC1EFBF42C9E5E65A929 /* TKStateMachine.h in Headers */ = {isa = PBXBuildFile; fileRef = 231AA44A23A622B6988604B70A18848E /* TKStateMachine.h */; };
+		DF2C02265C3DAB107B463273FDD8D998 /* RKRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = B750332B208CEEB3DC8CB8FAD5BFFB5C /* RKRouter.h */; };
+		DFF85D16BD2D96685B024D540B68E2A1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BE3EA8E2943BB5266B24546F1AE43D /* SystemConfiguration.framework */; };
+		E4613D48644816EB59E06F793B76E6E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1DDBE6FFC3BE7052C203A4A205C2383 /* Foundation.framework */; };
+		E57A50EADBF95042EEC834FBC00DFB6A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BE3EA8E2943BB5266B24546F1AE43D /* SystemConfiguration.framework */; };
+		E7014267980ECEEBAF7FC0C342FCF734 /* RKMapperOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4292B9DAAD5573AE95163441E84E4F46 /* RKMapperOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E92B8D003889F7E9C15C55E2D491ADCC /* RKRelationshipConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 041005FF95B3DB2C22A4A54973480936 /* RKRelationshipConnectionOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EA9570AAAFD7AFB5D2FC21007CA09E57 /* RKRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C43C38B30F5B13EE74EBA9ADCD52DE /* RKRoute.h */; };
+		EB73AF4C9D61D61F7B1BB0F6C573118D /* SOCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 89622454B6309852AD9687B0820C02B0 /* SOCKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB9574475688BEA349D282F727A6CF31 /* RKConnectionDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = B337AF444C580E18EAC6E8621F7F3D14 /* RKConnectionDescription.h */; };
+		EE2BC2CD774CD15AC2521426CF5C3AE7 /* RKMappingOperationDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BC16CF62FDB09D51F51D86A14C68058 /* RKMappingOperationDataSource.h */; };
+		EF6FEC4712BC05E70C80EF37FB80775F /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BACD2226EFBFFA09E885E4F3BA2124 /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EF85E1F743431166EB24344427FC66B3 /* Search.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C34B0224BF5F0E045F30715BBEED2ED /* Search.h */; };
+		F02934BCEB4E773CF819D95082F7AD51 /* RKPropertyInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E03C3B0A5330D11E23F085D9006776 /* RKPropertyInspector.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F0A6E2A0E39E7BDDF285E1969AB5E119 /* RKManagedObjectImporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A7A8D9A0171EB336EE4E19EC15E4AA5 /* RKManagedObjectImporter.h */; };
+		F293100D59E4E0BFB56EFD43F607B8FE /* AFXMLRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9780F02EFBD4FF441849EDDAE2483A6E /* AFXMLRequestOperation.h */; };
+		F3A33EA6590D6F036B845D4E3E843F24 /* RKErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A762AD5A3276953D1DF8584EE0F20D2 /* RKErrors.h */; };
+		F424EC69C871680B2162527C195DE8BD /* RKMIMETypeSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = FF19DD212B256A88339A4989D45C5256 /* RKMIMETypeSerialization.h */; };
+		F46BFC46525F2C3D217DDB94A24DD54C /* RKPropertyInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = D979CBC6CA76E74EC4FCAAD7AC39667E /* RKPropertyInspector.h */; };
+		F5B44DD17A0FE878169970958C2E668A /* RKRelationshipMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F79E04A23D84A86E0AD15293E3B29A /* RKRelationshipMapping.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F89B6894DCB23F398F2A2C55224F1A8C /* RKErrorMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D02C867B08E9AE278DD6FDD33B26127A /* RKErrorMessage.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F8E3B166A25887116E0B826748DB7984 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C27C75D75D34F2A597016B095BCF234 /* CoreGraphics.framework */; };
+		F9DCCE08E191B476896143A29CE90694 /* NSManagedObject+RKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FF46EF47EFBCB3FEF669C549CF1887A /* NSManagedObject+RKAdditions.h */; };
+		FB4E89474C8BD529095023BE5FFCDCEA /* Support.h in Headers */ = {isa = PBXBuildFile; fileRef = D19D0E9A2A0204F396A28B8ED5036541 /* Support.h */; };
+		FC46368CD5A89AD881B7E3197FDD8B8F /* RKSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 673ECFB16815327FBEEDB28B6EC53B33 /* RKSerialization.h */; };
+		FD8C7B958ECF1DA3BF71F7C60C33E54F /* RKAttributeMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 96C8DFF9E50977DF6AD9C81B4025BCD3 /* RKAttributeMapping.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		123F3EB9964256478C8BF68934F73A25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F2062E4E785F61FC4EE5F6F9C3B2199;
+			remoteInfo = TransitionKit;
+		};
+		34CEB8F8486B971A5AB7370F8EAC077F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6088836E877C4848489B6A41694A7AE;
+			remoteInfo = RestKit;
+		};
+		98456EA81E57503AF47D68FC46A26631 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71C15DFDEA6DB080EF012988DCED9A93;
+			remoteInfo = AFNetworking;
+		};
+		9F2F4B85980E937410E788F87645E019 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2770197345BCE1622568AECE6B8E824;
+			remoteInfo = SOCKit;
+		};
+		C6D55E247BE1772A707ADBE85EC93E46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2770197345BCE1622568AECE6B8E824;
+			remoteInfo = SOCKit;
+		};
+		CDE3806BB29678A6B832D81B8D622EC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F2062E4E785F61FC4EE5F6F9C3B2199;
+			remoteInfo = TransitionKit;
+		};
+		F24FF0C34A28FE961907913853F4131E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71C15DFDEA6DB080EF012988DCED9A93;
+			remoteInfo = AFNetworking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00F029FE96A6A2050419CCC131198A66 /* RKMapperOperation_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKMapperOperation_Private.h; path = Code/ObjectMapping/RKMapperOperation_Private.h; sourceTree = "<group>"; };
+		02678B277439AC2B2F46125069D4F97B /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		041005FF95B3DB2C22A4A54973480936 /* RKRelationshipConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKRelationshipConnectionOperation.m; path = Code/CoreData/RKRelationshipConnectionOperation.m; sourceTree = "<group>"; };
+		0592F2E9506F761FD1AD98DB9BAD22BA /* RKNSJSONSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKNSJSONSerialization.h; path = Code/Support/RKNSJSONSerialization.h; sourceTree = "<group>"; };
+		062779499AAD108B9084D72C43BCE433 /* RKOperationStateMachine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKOperationStateMachine.m; path = Code/Support/RKOperationStateMachine.m; sourceTree = "<group>"; };
+		07312BD67B90F4F92312515575A102A9 /* Pods-Meteo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Meteo-acknowledgements.plist"; sourceTree = "<group>"; };
+		0862109943F04269783713C11D45FE98 /* LCLNSLog_RK.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LCLNSLog_RK.m; path = Vendor/LibComponentLogging/NSLog/LCLNSLog_RK.m; sourceTree = "<group>"; };
+		08B8A5E1F6FEF6F8BC9671B52E95EA5A /* RKEntityByAttributeCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKEntityByAttributeCache.m; path = Code/CoreData/RKEntityByAttributeCache.m; sourceTree = "<group>"; };
+		0C15E2D197B323AEF65B3F3BFC454EE6 /* RKRequestDescriptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKRequestDescriptor.h; path = Code/Network/RKRequestDescriptor.h; sourceTree = "<group>"; };
+		0C71976AB709BA72FB6216F4D65BBA9E /* Pods-Meteo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Meteo-resources.sh"; sourceTree = "<group>"; };
+		0E854AEE73F6471104C4FF024B62FA1F /* Pods-Meteo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Meteo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		11BACD2226EFBFFA09E885E4F3BA2124 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		12621C611AAE3F1230A43C0582093FD9 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageRequestOperation.h; path = AFNetworking/AFImageRequestOperation.h; sourceTree = "<group>"; };
+		148F1E6E44AD2F1F5F390EE08DACEEB7 /* TKState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TKState.h; path = Code/TKState.h; sourceTree = "<group>"; };
+		15FA7D3103B52D3743DBB57666B9A3B8 /* lcl_RK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lcl_RK.h; path = Vendor/LibComponentLogging/Core/lcl_RK.h; sourceTree = "<group>"; };
+		16AC912ACD90DCC59FEE8E31740BDCE5 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFXMLRequestOperation.m; path = AFNetworking/AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		16BE3EA8E2943BB5266B24546F1AE43D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		179DEF6FC8BBB9AA12896F2895C86927 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		18592ABFE20918FA4D181FDA5CC049EB /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = AFNetworking/AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		18E03C3B0A5330D11E23F085D9006776 /* RKPropertyInspector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKPropertyInspector.m; path = Code/ObjectMapping/RKPropertyInspector.m; sourceTree = "<group>"; };
+		1943C6D36915A654068CCF93CECEB1FE /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
+		1BD2CC4E12142220EA76BDE755A2674B /* RKObjectManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKObjectManager.h; path = Code/Network/RKObjectManager.h; sourceTree = "<group>"; };
+		20267AE881DABAA87AD979B232E2C4E8 /* NSManagedObjectContext+RKAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+RKAdditions.m"; path = "Code/CoreData/NSManagedObjectContext+RKAdditions.m"; sourceTree = "<group>"; };
+		231AA44A23A622B6988604B70A18848E /* TKStateMachine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TKStateMachine.h; path = Code/TKStateMachine.h; sourceTree = "<group>"; };
+		2704A6B7687C897B7987A521F8525652 /* RKManagedObjectCaching.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKManagedObjectCaching.h; path = Code/CoreData/RKManagedObjectCaching.h; sourceTree = "<group>"; };
+		274517D33C7A0D639A19B3A232CEB3C9 /* RKMIMETypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKMIMETypes.h; path = Code/Support/RKMIMETypes.h; sourceTree = "<group>"; };
+		28A81877736D20CE86FF5CC1DAAADEA0 /* RKObjectManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKObjectManager.m; path = Code/Network/RKObjectManager.m; sourceTree = "<group>"; };
+		290709614A4BB4412DAD446930B69E7B /* RKObjectMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKObjectMapping.h; path = Code/ObjectMapping/RKObjectMapping.h; sourceTree = "<group>"; };
+		2E25BDCB5FA465737C8E28D11D8857FF /* RKHTTPUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKHTTPUtilities.h; path = Code/ObjectMapping/RKHTTPUtilities.h; sourceTree = "<group>"; };
+		2EF3B87E9C90977A2758595E965186E9 /* RKResponseDescriptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKResponseDescriptor.h; path = Code/Network/RKResponseDescriptor.h; sourceTree = "<group>"; };
+		2F0367CFB43104DABD17D2607A2CFF83 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		2FEC34C498531C87A8B1556A7E1057D1 /* RKObjectUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKObjectUtilities.h; path = Code/ObjectMapping/RKObjectUtilities.h; sourceTree = "<group>"; };
+		308B30F0A5ACC20095735C18097A2ACC /* RKManagedObjectRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKManagedObjectRequestOperation.m; path = Code/Network/RKManagedObjectRequestOperation.m; sourceTree = "<group>"; };
+		31D6F69CA0581D58F0D270851E9738C6 /* RKMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKMacros.h; path = Code/Support/RKMacros.h; sourceTree = "<group>"; };
+		325105434D415948B9DB589B0086CC6A /* RKPropertyMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKPropertyMapping.h; path = Code/ObjectMapping/RKPropertyMapping.h; sourceTree = "<group>"; };
+		327AE5356A58B3208101BA618A927B25 /* RestKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RestKit.xcconfig; sourceTree = "<group>"; };
+		345B791AE03CA406E483C13371F1BF14 /* RestKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "RestKit-Private.xcconfig"; sourceTree = "<group>"; };
+		34BB5F5855B59D16D43EAD5DA7CC24FE /* AFHTTPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPClient.h; path = AFNetworking/AFHTTPClient.h; sourceTree = "<group>"; };
+		369E7D47A80FD4BF03E148201402A1A6 /* lcl_config_components_RK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lcl_config_components_RK.h; path = Code/Support/lcl_config_components_RK.h; sourceTree = "<group>"; };
+		37C43C38B30F5B13EE74EBA9ADCD52DE /* RKRoute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKRoute.h; path = Code/Network/RKRoute.h; sourceTree = "<group>"; };
+		3910FCFC692105013DABCDB1ABABC2E3 /* RKMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKMapping.h; path = Code/ObjectMapping/RKMapping.h; sourceTree = "<group>"; };
+		3C27C75D75D34F2A597016B095BCF234 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		3D83439F2E3A675606AE7A2095BF48C3 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFJSONRequestOperation.h; path = AFNetworking/AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		3DF8A29DD8334C8C4087C88E7D718BEA /* RKObjectUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKObjectUtilities.m; path = Code/ObjectMapping/RKObjectUtilities.m; sourceTree = "<group>"; };
+		40AD061A150E8E8FDE1E306FA9C5F9D5 /* RKISO8601DateFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKISO8601DateFormatter.m; path = Code/Support/RKISO8601DateFormatter.m; sourceTree = "<group>"; };
+		41133C938B0260349E006498CD38BCE1 /* RKDotNetDateFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKDotNetDateFormatter.m; path = Code/Support/RKDotNetDateFormatter.m; sourceTree = "<group>"; };
+		41CF6177AF4E34E584D831DC351993F7 /* RKHTTPUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKHTTPUtilities.m; path = Code/ObjectMapping/RKHTTPUtilities.m; sourceTree = "<group>"; };
+		4225EAAD37AA1DF99662143882F16CEA /* RKDotNetDateFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKDotNetDateFormatter.h; path = Code/Support/RKDotNetDateFormatter.h; sourceTree = "<group>"; };
+		427BD3537D0EBA10549EC696CEDA6342 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		4292B9DAAD5573AE95163441E84E4F46 /* RKMapperOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKMapperOperation.m; path = Code/ObjectMapping/RKMapperOperation.m; sourceTree = "<group>"; };
+		438ED0996C0BED106575FF68A1610841 /* RKPaginator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKPaginator.m; path = Code/Network/RKPaginator.m; sourceTree = "<group>"; };
+		44AD8C146B32A9B3E89DE62FF04F7D6B /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		44DC31A9F1A34A204D740109D0FAAD2E /* TKStateMachine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TKStateMachine.m; path = Code/TKStateMachine.m; sourceTree = "<group>"; };
+		459E5C0E413C21937E5D65E4DA13EBEE /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = AFNetworking/AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		4AD92583A2B861A434D1B551B39EF18F /* RKMapperOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKMapperOperation.h; path = Code/ObjectMapping/RKMapperOperation.h; sourceTree = "<group>"; };
+		4BC16CF62FDB09D51F51D86A14C68058 /* RKMappingOperationDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKMappingOperationDataSource.h; path = Code/ObjectMapping/RKMappingOperationDataSource.h; sourceTree = "<group>"; };
+		4C140A71701D26492F6A2C88FF41D6C9 /* RKRoute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKRoute.m; path = Code/Network/RKRoute.m; sourceTree = "<group>"; };
+		4DBF74A26D98E002F72EC9BF9EE8CF88 /* TransitionKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TransitionKit.h; path = Code/TransitionKit.h; sourceTree = "<group>"; };
+		4FE09EB1BAFD6593655A66644AD9F2C0 /* SOCKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SOCKit-dummy.m"; sourceTree = "<group>"; };
+		5612BF6C1EFBD9EFF7D9A93D16C4C4AA /* RKObjectParameterization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKObjectParameterization.h; path = Code/Network/RKObjectParameterization.h; sourceTree = "<group>"; };
+		566C579D57DF66EFADD2710826CE4548 /* TransitionKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TransitionKit.xcconfig; sourceTree = "<group>"; };
+		5A7A8D9A0171EB336EE4E19EC15E4AA5 /* RKManagedObjectImporter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKManagedObjectImporter.h; path = Code/CoreData/RKManagedObjectImporter.h; sourceTree = "<group>"; };
+		5BB7330D8497EF9B189C392B2B4B07F8 /* RKHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKHTTPRequestOperation.h; path = Code/Network/RKHTTPRequestOperation.h; sourceTree = "<group>"; };
+		5E3465F41EA2400B37708263E18B49B6 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		5E89EE8DC55A21754CF9396B1167B650 /* RKPathMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKPathMatcher.m; path = Code/Support/RKPathMatcher.m; sourceTree = "<group>"; };
+		5F55A3F278CEF193E35C07E1F55DD3A6 /* Testing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Testing.h; path = Code/Testing.h; sourceTree = "<group>"; };
+		5F5C397CB33F17ABDDFF90CEC1735954 /* RKDictionaryUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKDictionaryUtilities.m; path = Code/Support/RKDictionaryUtilities.m; sourceTree = "<group>"; };
+		618ECAF3B06F68413D3551653E5E7BC3 /* libRestKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRestKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E7EFDFA442DA79F8FBD79B5ECF54A5 /* RKPathMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKPathMatcher.h; path = Code/Support/RKPathMatcher.h; sourceTree = "<group>"; };
+		673ECFB16815327FBEEDB28B6EC53B33 /* RKSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKSerialization.h; path = Code/Support/RKSerialization.h; sourceTree = "<group>"; };
+		6A50A500482DB811E42A641962AE229D /* RKMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKMapping.m; path = Code/ObjectMapping/RKMapping.m; sourceTree = "<group>"; };
+		6A762AD5A3276953D1DF8584EE0F20D2 /* RKErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKErrors.h; path = Code/Support/RKErrors.h; sourceTree = "<group>"; };
+		6BB70880466C67D275E9C6EF7BEF1891 /* libPods-Meteo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Meteo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D5CBE7AC27C7C2FF88466F719680C84 /* Network.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Network.h; path = Code/Network.h; sourceTree = "<group>"; };
+		6FF46EF47EFBCB3FEF669C549CF1887A /* NSManagedObject+RKAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+RKAdditions.h"; path = "Code/CoreData/NSManagedObject+RKAdditions.h"; sourceTree = "<group>"; };
+		706877871DFDC40332B5138E64C33319 /* RKRelationshipMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKRelationshipMapping.h; path = Code/ObjectMapping/RKRelationshipMapping.h; sourceTree = "<group>"; };
+		73282929762630CC3F2C94DC7D4E8AC4 /* RKMappingResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKMappingResult.h; path = Code/ObjectMapping/RKMappingResult.h; sourceTree = "<group>"; };
+		7359390255933B5B9D578F1BC8E22F04 /* RKISO8601DateFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKISO8601DateFormatter.h; path = Code/Support/RKISO8601DateFormatter.h; sourceTree = "<group>"; };
+		7460D8AD9AE2D24A33683010C28D4755 /* SOCKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SOCKit.xcconfig; sourceTree = "<group>"; };
+		75C8B1754F2FE954918A0472FF759D8F /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		764A0F8EF15CD202361039870FAE935D /* RKMappingResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKMappingResult.m; path = Code/ObjectMapping/RKMappingResult.m; sourceTree = "<group>"; };
+		790A435C949F0964A302611CDAAD2792 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFPropertyListRequestOperation.m; path = AFNetworking/AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		79540B3FFADC0AE12E9E3B53416485A0 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFPropertyListRequestOperation.h; path = AFNetworking/AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		79621DA6B3F9EB0F1D28217A04323AB9 /* RKObjectMappingOperationDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKObjectMappingOperationDataSource.m; path = Code/ObjectMapping/RKObjectMappingOperationDataSource.m; sourceTree = "<group>"; };
+		7998A464D017359BEE65FEBB90496888 /* RKLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKLog.h; path = Code/Support/RKLog.h; sourceTree = "<group>"; };
+		800F506596FA78A8E09059FC9AA3D369 /* RKPropertyInspector+CoreData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RKPropertyInspector+CoreData.h"; path = "Code/CoreData/RKPropertyInspector+CoreData.h"; sourceTree = "<group>"; };
+		8023982E8F170D0940564C237D75DCA5 /* RKObjectMappingMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKObjectMappingMatcher.h; path = Code/ObjectMapping/RKObjectMappingMatcher.h; sourceTree = "<group>"; };
+		80CF829CDD3C48184E3BD48800762A0E /* NSManagedObject+RKAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+RKAdditions.m"; path = "Code/CoreData/NSManagedObject+RKAdditions.m"; sourceTree = "<group>"; };
+		81DE187DB8EDBAF4253FEAC14D9AAABA /* lcl_config_logger_RK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lcl_config_logger_RK.h; path = Code/Support/lcl_config_logger_RK.h; sourceTree = "<group>"; };
+		848F96025A84FFA39D639FA31C723FBF /* NSManagedObjectContext+RKAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+RKAdditions.h"; path = "Code/CoreData/NSManagedObjectContext+RKAdditions.h"; sourceTree = "<group>"; };
+		86A22C882A8B22397454B0086A19C5DC /* TransitionKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "TransitionKit-Private.xcconfig"; sourceTree = "<group>"; };
+		89005D71CCC3318F417FEC081D036B65 /* RestKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RestKit-prefix.pch"; sourceTree = "<group>"; };
+		89622454B6309852AD9687B0820C02B0 /* SOCKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SOCKit.m; sourceTree = "<group>"; };
+		8A44F9358FE2D15B6E68DB6599CF69D3 /* RKInMemoryManagedObjectCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKInMemoryManagedObjectCache.h; path = Code/CoreData/RKInMemoryManagedObjectCache.h; sourceTree = "<group>"; };
+		8A4E3E3E5CCCC2215AD7B7265E5441EC /* RKInMemoryManagedObjectCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKInMemoryManagedObjectCache.m; path = Code/CoreData/RKInMemoryManagedObjectCache.m; sourceTree = "<group>"; };
+		8A59C4A325D09AD7F240C0D28E52B7C2 /* RKManagedObjectMappingOperationDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKManagedObjectMappingOperationDataSource.h; path = Code/CoreData/RKManagedObjectMappingOperationDataSource.h; sourceTree = "<group>"; };
+		8AEFE40387483923AB3A63FF4C80CCD1 /* RKObjectMappingMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKObjectMappingMatcher.m; path = Code/ObjectMapping/RKObjectMappingMatcher.m; sourceTree = "<group>"; };
+		8C34B0224BF5F0E045F30715BBEED2ED /* Search.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Search.h; path = Code/Search.h; sourceTree = "<group>"; };
+		8C88FC8F6334EE921AA43E8D8BD5C71C /* RKRequestDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKRequestDescriptor.m; path = Code/Network/RKRequestDescriptor.m; sourceTree = "<group>"; };
+		8CD57368E2225672B93A873EB6B8777C /* RKURLEncodedSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKURLEncodedSerialization.h; path = Code/Support/RKURLEncodedSerialization.h; sourceTree = "<group>"; };
+		8E725EC4F94ACE6E043ED02E961840F7 /* RKResponseMapperOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKResponseMapperOperation.m; path = Code/Network/RKResponseMapperOperation.m; sourceTree = "<group>"; };
+		8EDF9209D453079A6EE99C84CD546F61 /* RKMappingErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKMappingErrors.h; path = Code/ObjectMapping/RKMappingErrors.h; sourceTree = "<group>"; };
+		8F38E5FC8E986467DB0DD1429904B1AA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		90C1ED332D2B386DA8BB2B7A604AAD98 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFJSONRequestOperation.m; path = AFNetworking/AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		90E503ED6E055CCAEB8E9EA9226BA1CD /* RKMIMETypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKMIMETypes.m; path = Code/Support/RKMIMETypes.m; sourceTree = "<group>"; };
+		9328A45696944593EB5C01FBC984B844 /* RKNSJSONSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKNSJSONSerialization.m; path = Code/Support/RKNSJSONSerialization.m; sourceTree = "<group>"; };
+		951E7595147E1F71FA0ED4F4EB2C2AB6 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageRequestOperation.m; path = AFNetworking/AFImageRequestOperation.m; sourceTree = "<group>"; };
+		95D5E5D0E723FEB82A4906E21D24CFF4 /* RKURLEncodedSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKURLEncodedSerialization.m; path = Code/Support/RKURLEncodedSerialization.m; sourceTree = "<group>"; };
+		95FE48ECF822B5698A14F0548CA15736 /* RKEntityCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKEntityCache.h; path = Code/CoreData/RKEntityCache.h; sourceTree = "<group>"; };
+		962B4FD5E59F444A48C86AF6986C86CE /* lcl_config_extensions_RK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lcl_config_extensions_RK.h; path = Code/Support/lcl_config_extensions_RK.h; sourceTree = "<group>"; };
+		963BE87273F42A3CFC957F88D771DD78 /* RKManagedObjectStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKManagedObjectStore.m; path = Code/CoreData/RKManagedObjectStore.m; sourceTree = "<group>"; };
+		96A98B34414903617DDCC4DD35D0ACC8 /* SOCKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SOCKit.h; sourceTree = "<group>"; };
+		96C8DFF9E50977DF6AD9C81B4025BCD3 /* RKAttributeMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKAttributeMapping.h; path = Code/ObjectMapping/RKAttributeMapping.h; sourceTree = "<group>"; };
+		970788F39FB8C86AF9DC345961AC08A8 /* libTransitionKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTransitionKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9780F02EFBD4FF441849EDDAE2483A6E /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFXMLRequestOperation.h; path = AFNetworking/AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		98ECCCAEFB9CB0B63A19FC02F5564E8E /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		9A70CF294D236CBA7374FD6AD287ED41 /* RestKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RestKit.h; path = Code/RestKit.h; sourceTree = "<group>"; };
+		9A8E639AF48D938813CF0860E9FF8754 /* SOCKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SOCKit-Private.xcconfig"; sourceTree = "<group>"; };
+		9B0B8A86662BAF073B0DD514BD38CE69 /* TransitionKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TransitionKit-dummy.m"; sourceTree = "<group>"; };
+		A2208F207646CBFE2DCC8C6CB01C0748 /* lcl_RK.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = lcl_RK.m; path = Vendor/LibComponentLogging/Core/lcl_RK.m; sourceTree = "<group>"; };
+		A4A680F7D1ECDC94C58E9A54FA04578A /* TKEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TKEvent.h; path = Code/TKEvent.h; sourceTree = "<group>"; };
+		A54BA714770BA8ED007819BC352FEB7C /* libSOCKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSOCKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A566D50814933723B560516065388785 /* RKErrors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKErrors.m; path = Code/Support/RKErrors.m; sourceTree = "<group>"; };
+		A57B9A873260DFE90DD408E4C1AE4E13 /* RKDynamicMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKDynamicMapping.m; path = Code/ObjectMapping/RKDynamicMapping.m; sourceTree = "<group>"; };
+		A6125ABEBC1DA76F369DE1378E0C4840 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		A74791EB9B9C33FDB3E254695E2FAF58 /* RKRelationshipConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKRelationshipConnectionOperation.h; path = Code/CoreData/RKRelationshipConnectionOperation.h; sourceTree = "<group>"; };
+		A7A450B774F993CE9871A3DD784C092C /* RKObjectRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKObjectRequestOperation.h; path = Code/Network/RKObjectRequestOperation.h; sourceTree = "<group>"; };
+		AB6B030142A2FE118236D4D554A33427 /* RKEntityCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKEntityCache.m; path = Code/CoreData/RKEntityCache.m; sourceTree = "<group>"; };
+		AEA34C366A1F9FE35B0E4C061A9305F6 /* CoreData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoreData.h; path = Code/CoreData.h; sourceTree = "<group>"; };
+		AEB0DAE5AEDD23884AD8407058457E5E /* RKRouteSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKRouteSet.m; path = Code/Network/RKRouteSet.m; sourceTree = "<group>"; };
+		B13A506D9E78C61D164173059E7CEE77 /* LCLNSLog_RK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LCLNSLog_RK.h; path = Vendor/LibComponentLogging/NSLog/LCLNSLog_RK.h; sourceTree = "<group>"; };
+		B20E142C92D63FE773B0789BC1891BDE /* RKConnectionDescription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKConnectionDescription.m; path = Code/CoreData/RKConnectionDescription.m; sourceTree = "<group>"; };
+		B30F258438DB91647461DA1B08DAB44A /* RKValueTransformers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKValueTransformers.h; path = Code/ObjectMapping/RKValueTransformers.h; sourceTree = "<group>"; };
+		B337AF444C580E18EAC6E8621F7F3D14 /* RKConnectionDescription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKConnectionDescription.h; path = Code/CoreData/RKConnectionDescription.h; sourceTree = "<group>"; };
+		B33A7C81B155DD236E664E5C205CA3EB /* RKManagedObjectStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKManagedObjectStore.h; path = Code/CoreData/RKManagedObjectStore.h; sourceTree = "<group>"; };
+		B3C5D952C5C4B16A4A95BB58E382884F /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		B4CD5BA383E50BECE0D2E569D377E3D1 /* RKValueTransformers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKValueTransformers.m; path = Code/ObjectMapping/RKValueTransformers.m; sourceTree = "<group>"; };
+		B6346D2EEE428462F7FD10A395D037A5 /* RKDynamicMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKDynamicMapping.h; path = Code/ObjectMapping/RKDynamicMapping.h; sourceTree = "<group>"; };
+		B750332B208CEEB3DC8CB8FAD5BFFB5C /* RKRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKRouter.h; path = Code/Network/RKRouter.h; sourceTree = "<group>"; };
+		B8FBB2AAAFD66E8B9A20D2A256504413 /* RKObjectParameterization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKObjectParameterization.m; path = Code/Network/RKObjectParameterization.m; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BD080EBB7F089DF722A7CF444A997AE4 /* RKErrorMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKErrorMessage.h; path = Code/ObjectMapping/RKErrorMessage.h; sourceTree = "<group>"; };
+		BEE7907E67E85FC4E3CD2A4810772030 /* TKEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TKEvent.m; path = Code/TKEvent.m; sourceTree = "<group>"; };
+		BF49617E30C6A614B61A1527262F23AC /* RKResponseDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKResponseDescriptor.m; path = Code/Network/RKResponseDescriptor.m; sourceTree = "<group>"; };
+		C3E74C122660185D780701DAC5AAB96A /* AFHTTPClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPClient.m; path = AFNetworking/AFHTTPClient.m; sourceTree = "<group>"; };
+		C3F79E04A23D84A86E0AD15293E3B29A /* RKRelationshipMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKRelationshipMapping.m; path = Code/ObjectMapping/RKRelationshipMapping.m; sourceTree = "<group>"; };
+		C5A9E86C01761B541B1FE4B4AB12F8F7 /* RKPaginator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKPaginator.h; path = Code/Network/RKPaginator.h; sourceTree = "<group>"; };
+		C923E83DEF45FA270F6DA061308BECD0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		CA5590590675F3A11309924F077C122F /* RKRequestOperationSubclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKRequestOperationSubclass.h; path = Code/Network/RKRequestOperationSubclass.h; sourceTree = "<group>"; };
+		CFEA67686697FF15CFBCC29737D09E21 /* TransitionKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TransitionKit-prefix.pch"; sourceTree = "<group>"; };
+		D02C867B08E9AE278DD6FDD33B26127A /* RKErrorMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKErrorMessage.m; path = Code/ObjectMapping/RKErrorMessage.m; sourceTree = "<group>"; };
+		D05CE9E946F33F290080BCA68C7ABEB1 /* SOCKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SOCKit-prefix.pch"; sourceTree = "<group>"; };
+		D19D0E9A2A0204F396A28B8ED5036541 /* Support.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Support.h; path = Code/Support.h; sourceTree = "<group>"; };
+		D1E2475209CA72C7EA50B63826705077 /* RKDictionaryUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKDictionaryUtilities.h; path = Code/Support/RKDictionaryUtilities.h; sourceTree = "<group>"; };
+		D3B947BA9A9A64A1E987777B3DD75DB1 /* RKObjectMappingOperationDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKObjectMappingOperationDataSource.h; path = Code/ObjectMapping/RKObjectMappingOperationDataSource.h; sourceTree = "<group>"; };
+		D41E4ABA2D97DDEB089BAF6986A8D53A /* RKResponseMapperOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKResponseMapperOperation.h; path = Code/Network/RKResponseMapperOperation.h; sourceTree = "<group>"; };
+		D5C7A2B9A633A5F2FD485F349F27D6B3 /* Pods-Meteo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meteo.release.xcconfig"; sourceTree = "<group>"; };
+		D7992F0664F3A879AE2EBB8D24570E2B /* RKEntityByAttributeCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKEntityByAttributeCache.h; path = Code/CoreData/RKEntityByAttributeCache.h; sourceTree = "<group>"; };
+		D7B1A63F7A5BB9EB5825A3E64BA93790 /* RKFetchRequestManagedObjectCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKFetchRequestManagedObjectCache.m; path = Code/CoreData/RKFetchRequestManagedObjectCache.m; sourceTree = "<group>"; };
+		D8910B88776FB62F8860BBDD02152D0A /* Pods-Meteo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meteo.debug.xcconfig"; sourceTree = "<group>"; };
+		D979CBC6CA76E74EC4FCAAD7AC39667E /* RKPropertyInspector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKPropertyInspector.h; path = Code/ObjectMapping/RKPropertyInspector.h; sourceTree = "<group>"; };
+		D991B30E9A80489AD29E270A6C82C6D9 /* RKPropertyMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKPropertyMapping.m; path = Code/ObjectMapping/RKPropertyMapping.m; sourceTree = "<group>"; };
+		DB93842767A7FFFDC7A62B828C69DCFA /* RKFetchRequestManagedObjectCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKFetchRequestManagedObjectCache.h; path = Code/CoreData/RKFetchRequestManagedObjectCache.h; sourceTree = "<group>"; };
+		DE7B6E1BF031FA1E3097FFF717E98133 /* RKManagedObjectImporter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKManagedObjectImporter.m; path = Code/CoreData/RKManagedObjectImporter.m; sourceTree = "<group>"; };
+		DFD7B2395FFB2A828D4A1CA950A8FF60 /* RKMIMETypeSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKMIMETypeSerialization.m; path = Code/Support/RKMIMETypeSerialization.m; sourceTree = "<group>"; };
+		E122CC2FA4220A705DE30BDC8A47D7B2 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		E1382B425FD556CE76BE9B1ED95642F8 /* RKRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKRouter.m; path = Code/Network/RKRouter.m; sourceTree = "<group>"; };
+		E1DDBE6FFC3BE7052C203A4A205C2383 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E36ACE9143C2AFBD9073DCA0DC8F1B4D /* RKManagedObjectMappingOperationDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKManagedObjectMappingOperationDataSource.m; path = Code/CoreData/RKManagedObjectMappingOperationDataSource.m; sourceTree = "<group>"; };
+		E489F7FCB7D89DEEFD683E5BF7954444 /* RKManagedObjectRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKManagedObjectRequestOperation.h; path = Code/Network/RKManagedObjectRequestOperation.h; sourceTree = "<group>"; };
+		E676AABBAEF82BE6C6B9CE746FBA5D75 /* RKLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKLog.m; path = Code/Support/RKLog.m; sourceTree = "<group>"; };
+		E7038ACB754F5B53D088A6CBF7AD1B35 /* RKHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKHTTPRequestOperation.m; path = Code/Network/RKHTTPRequestOperation.m; sourceTree = "<group>"; };
+		E7F39151205CE958EA5685375E4D45C8 /* RKPathUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKPathUtilities.h; path = Code/Support/RKPathUtilities.h; sourceTree = "<group>"; };
+		E81D9781D697890D1D58DE1DC8015BE1 /* RKOperationStateMachine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKOperationStateMachine.h; path = Code/Support/RKOperationStateMachine.h; sourceTree = "<group>"; };
+		E95D8D1A85D8A2C951A98F2B09B1D8E9 /* RKEntityMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKEntityMapping.h; path = Code/CoreData/RKEntityMapping.h; sourceTree = "<group>"; };
+		EC5AD7A722E3E4CDC5C24AD9A38489B8 /* RKObjectRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKObjectRequestOperation.m; path = Code/Network/RKObjectRequestOperation.m; sourceTree = "<group>"; };
+		EF656853ED1ED3B2AA339AF54940DC6D /* RKAttributeMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKAttributeMapping.m; path = Code/ObjectMapping/RKAttributeMapping.m; sourceTree = "<group>"; };
+		EFE45345A6C8D1AAE5C40C95B2B27C12 /* RestKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RestKit-dummy.m"; sourceTree = "<group>"; };
+		F23FCF9D26398230D13F9D59DD5B2CA2 /* RKPropertyInspector+CoreData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RKPropertyInspector+CoreData.m"; path = "Code/CoreData/RKPropertyInspector+CoreData.m"; sourceTree = "<group>"; };
+		F5352FF18975CDB3F01BCE5F26351C29 /* RKEntityMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKEntityMapping.m; path = Code/CoreData/RKEntityMapping.m; sourceTree = "<group>"; };
+		F5AB23BB67CF6470DFD33DA31222656E /* AFNetworking-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AFNetworking-Private.xcconfig"; sourceTree = "<group>"; };
+		F6CF5E1E55E788ECE32C445B2B78632D /* TKState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TKState.m; path = Code/TKState.m; sourceTree = "<group>"; };
+		F9023C724A74CDF23BBE3EE5ACF5239C /* ObjectMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjectMapping.h; path = Code/ObjectMapping.h; sourceTree = "<group>"; };
+		F9D21D745BE5B33F1F1AA929FEE9F285 /* RKObjectMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKObjectMapping.m; path = Code/ObjectMapping/RKObjectMapping.m; sourceTree = "<group>"; };
+		FADF84FC03373294412BE3F4853BC157 /* RKMappingOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKMappingOperation.h; path = Code/ObjectMapping/RKMappingOperation.h; sourceTree = "<group>"; };
+		FC8ABFE01676FDF0A10715590EEB76E4 /* Pods-Meteo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Meteo-dummy.m"; sourceTree = "<group>"; };
+		FCA4CD7317D79DA62CC640E4A6F1017B /* RKPathUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKPathUtilities.m; path = Code/Support/RKPathUtilities.m; sourceTree = "<group>"; };
+		FD9084188651009B7D0DB39A460A4896 /* RKRouteSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKRouteSet.h; path = Code/Network/RKRouteSet.h; sourceTree = "<group>"; };
+		FEDE930C2234BBEB198BCB8EE6297277 /* RKMappingOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKMappingOperation.m; path = Code/ObjectMapping/RKMappingOperation.m; sourceTree = "<group>"; };
+		FF19DD212B256A88339A4989D45C5256 /* RKMIMETypeSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKMIMETypeSerialization.h; path = Code/Support/RKMIMETypeSerialization.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A01C15E6A0650DFAD56F7C67CFB09AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0A3F1653721FD4699DABF3AB35D5057 /* CFNetwork.framework in Frameworks */,
+				7AA9CFB7FEBEE23E295D0019CAA3BCC2 /* CoreData.framework in Frameworks */,
+				31EA1C7A03BBDBDF5CE7CD6F32507DED /* Foundation.framework in Frameworks */,
+				88934B5C4D87F8520E0552464442BEBB /* MobileCoreServices.framework in Frameworks */,
+				4F39FDEB07063CA4256537EB4ECFAD10 /* Security.framework in Frameworks */,
+				DFF85D16BD2D96685B024D540B68E2A1 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5972652DA8E3CB6256417EE7BCB541BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2406F161CC120D07B885E6D8D930DB3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		798B120416A2AE98C2C71B50DBF82838 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E3B166A25887116E0B826748DB7984 /* CoreGraphics.framework in Frameworks */,
+				E4613D48644816EB59E06F793B76E6E2 /* Foundation.framework in Frameworks */,
+				8E458A744E15BABABCE0B2AAA05CA749 /* MobileCoreServices.framework in Frameworks */,
+				4932C37F5B56BB3E92CF149544E22903 /* Security.framework in Frameworks */,
+				E57A50EADBF95042EEC834FBC00DFB6A /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0167A0981FB8495FD0F47CD2E89C94B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFCCF72FC9B5D31721B9389145170AA0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E750FB9EB5B957FD4FE986F87D2D42DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0CFDEED028603B09A2F60EEDDB1A64F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		076A99A6353D0B530101C34CC1361919 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1943C6D36915A654068CCF93CECEB1FE /* AFNetworking.xcconfig */,
+				F5AB23BB67CF6470DFD33DA31222656E /* AFNetworking-Private.xcconfig */,
+				2F0367CFB43104DABD17D2607A2CFF83 /* AFNetworking-dummy.m */,
+				75C8B1754F2FE954918A0472FF759D8F /* AFNetworking-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AFNetworking";
+			sourceTree = "<group>";
+		};
+		3E78D62E27600C7F30843B04CA286602 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5BB7330D8497EF9B189C392B2B4B07F8 /* RKHTTPRequestOperation.h */,
+				E7038ACB754F5B53D088A6CBF7AD1B35 /* RKHTTPRequestOperation.m */,
+				E489F7FCB7D89DEEFD683E5BF7954444 /* RKManagedObjectRequestOperation.h */,
+				308B30F0A5ACC20095735C18097A2ACC /* RKManagedObjectRequestOperation.m */,
+				1BD2CC4E12142220EA76BDE755A2674B /* RKObjectManager.h */,
+				28A81877736D20CE86FF5CC1DAAADEA0 /* RKObjectManager.m */,
+				5612BF6C1EFBD9EFF7D9A93D16C4C4AA /* RKObjectParameterization.h */,
+				B8FBB2AAAFD66E8B9A20D2A256504413 /* RKObjectParameterization.m */,
+				A7A450B774F993CE9871A3DD784C092C /* RKObjectRequestOperation.h */,
+				EC5AD7A722E3E4CDC5C24AD9A38489B8 /* RKObjectRequestOperation.m */,
+				C5A9E86C01761B541B1FE4B4AB12F8F7 /* RKPaginator.h */,
+				438ED0996C0BED106575FF68A1610841 /* RKPaginator.m */,
+				0C15E2D197B323AEF65B3F3BFC454EE6 /* RKRequestDescriptor.h */,
+				8C88FC8F6334EE921AA43E8D8BD5C71C /* RKRequestDescriptor.m */,
+				CA5590590675F3A11309924F077C122F /* RKRequestOperationSubclass.h */,
+				2EF3B87E9C90977A2758595E965186E9 /* RKResponseDescriptor.h */,
+				BF49617E30C6A614B61A1527262F23AC /* RKResponseDescriptor.m */,
+				D41E4ABA2D97DDEB089BAF6986A8D53A /* RKResponseMapperOperation.h */,
+				8E725EC4F94ACE6E043ED02E961840F7 /* RKResponseMapperOperation.m */,
+				37C43C38B30F5B13EE74EBA9ADCD52DE /* RKRoute.h */,
+				4C140A71701D26492F6A2C88FF41D6C9 /* RKRoute.m */,
+				FD9084188651009B7D0DB39A460A4896 /* RKRouteSet.h */,
+				AEB0DAE5AEDD23884AD8407058457E5E /* RKRouteSet.m */,
+				B750332B208CEEB3DC8CB8FAD5BFFB5C /* RKRouter.h */,
+				E1382B425FD556CE76BE9B1ED95642F8 /* RKRouter.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		4ECB1C6ED36AC9222763ED3C5C59A332 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AEA34C366A1F9FE35B0E4C061A9305F6 /* CoreData.h */,
+				B13A506D9E78C61D164173059E7CEE77 /* LCLNSLog_RK.h */,
+				0862109943F04269783713C11D45FE98 /* LCLNSLog_RK.m */,
+				6D5CBE7AC27C7C2FF88466F719680C84 /* Network.h */,
+				F9023C724A74CDF23BBE3EE5ACF5239C /* ObjectMapping.h */,
+				9A70CF294D236CBA7374FD6AD287ED41 /* RestKit.h */,
+				8C34B0224BF5F0E045F30715BBEED2ED /* Search.h */,
+				D19D0E9A2A0204F396A28B8ED5036541 /* Support.h */,
+				5F55A3F278CEF193E35C07E1F55DD3A6 /* Testing.h */,
+				15FA7D3103B52D3743DBB57666B9A3B8 /* lcl_RK.h */,
+				A2208F207646CBFE2DCC8C6CB01C0748 /* lcl_RK.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		548D99295E32803CB87798AAFC787ABA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				327AE5356A58B3208101BA618A927B25 /* RestKit.xcconfig */,
+				345B791AE03CA406E483C13371F1BF14 /* RestKit-Private.xcconfig */,
+				EFE45345A6C8D1AAE5C40C95B2B27C12 /* RestKit-dummy.m */,
+				89005D71CCC3318F417FEC081D036B65 /* RestKit-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RestKit";
+			sourceTree = "<group>";
+		};
+		58C646E89F301BBBF1FFACA5587DE1FD /* Pods-Meteo */ = {
+			isa = PBXGroup;
+			children = (
+				0E854AEE73F6471104C4FF024B62FA1F /* Pods-Meteo-acknowledgements.markdown */,
+				07312BD67B90F4F92312515575A102A9 /* Pods-Meteo-acknowledgements.plist */,
+				FC8ABFE01676FDF0A10715590EEB76E4 /* Pods-Meteo-dummy.m */,
+				0C71976AB709BA72FB6216F4D65BBA9E /* Pods-Meteo-resources.sh */,
+				D8910B88776FB62F8860BBDD02152D0A /* Pods-Meteo.debug.xcconfig */,
+				D5C7A2B9A633A5F2FD485F349F27D6B3 /* Pods-Meteo.release.xcconfig */,
+			);
+			name = "Pods-Meteo";
+			path = "Target Support Files/Pods-Meteo";
+			sourceTree = "<group>";
+		};
+		622A7C3883205C93E474CE02E12DF770 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				6FF46EF47EFBCB3FEF669C549CF1887A /* NSManagedObject+RKAdditions.h */,
+				80CF829CDD3C48184E3BD48800762A0E /* NSManagedObject+RKAdditions.m */,
+				848F96025A84FFA39D639FA31C723FBF /* NSManagedObjectContext+RKAdditions.h */,
+				20267AE881DABAA87AD979B232E2C4E8 /* NSManagedObjectContext+RKAdditions.m */,
+				B337AF444C580E18EAC6E8621F7F3D14 /* RKConnectionDescription.h */,
+				B20E142C92D63FE773B0789BC1891BDE /* RKConnectionDescription.m */,
+				D7992F0664F3A879AE2EBB8D24570E2B /* RKEntityByAttributeCache.h */,
+				08B8A5E1F6FEF6F8BC9671B52E95EA5A /* RKEntityByAttributeCache.m */,
+				95FE48ECF822B5698A14F0548CA15736 /* RKEntityCache.h */,
+				AB6B030142A2FE118236D4D554A33427 /* RKEntityCache.m */,
+				E95D8D1A85D8A2C951A98F2B09B1D8E9 /* RKEntityMapping.h */,
+				F5352FF18975CDB3F01BCE5F26351C29 /* RKEntityMapping.m */,
+				DB93842767A7FFFDC7A62B828C69DCFA /* RKFetchRequestManagedObjectCache.h */,
+				D7B1A63F7A5BB9EB5825A3E64BA93790 /* RKFetchRequestManagedObjectCache.m */,
+				8A44F9358FE2D15B6E68DB6599CF69D3 /* RKInMemoryManagedObjectCache.h */,
+				8A4E3E3E5CCCC2215AD7B7265E5441EC /* RKInMemoryManagedObjectCache.m */,
+				2704A6B7687C897B7987A521F8525652 /* RKManagedObjectCaching.h */,
+				5A7A8D9A0171EB336EE4E19EC15E4AA5 /* RKManagedObjectImporter.h */,
+				DE7B6E1BF031FA1E3097FFF717E98133 /* RKManagedObjectImporter.m */,
+				8A59C4A325D09AD7F240C0D28E52B7C2 /* RKManagedObjectMappingOperationDataSource.h */,
+				E36ACE9143C2AFBD9073DCA0DC8F1B4D /* RKManagedObjectMappingOperationDataSource.m */,
+				B33A7C81B155DD236E664E5C205CA3EB /* RKManagedObjectStore.h */,
+				963BE87273F42A3CFC957F88D771DD78 /* RKManagedObjectStore.m */,
+				800F506596FA78A8E09059FC9AA3D369 /* RKPropertyInspector+CoreData.h */,
+				F23FCF9D26398230D13F9D59DD5B2CA2 /* RKPropertyInspector+CoreData.m */,
+				A74791EB9B9C33FDB3E254695E2FAF58 /* RKRelationshipConnectionOperation.h */,
+				041005FF95B3DB2C22A4A54973480936 /* RKRelationshipConnectionOperation.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		7390F242DF51205BBAC41697C2106DBB /* ObjectMapping */ = {
+			isa = PBXGroup;
+			children = (
+				96C8DFF9E50977DF6AD9C81B4025BCD3 /* RKAttributeMapping.h */,
+				EF656853ED1ED3B2AA339AF54940DC6D /* RKAttributeMapping.m */,
+				B6346D2EEE428462F7FD10A395D037A5 /* RKDynamicMapping.h */,
+				A57B9A873260DFE90DD408E4C1AE4E13 /* RKDynamicMapping.m */,
+				BD080EBB7F089DF722A7CF444A997AE4 /* RKErrorMessage.h */,
+				D02C867B08E9AE278DD6FDD33B26127A /* RKErrorMessage.m */,
+				2E25BDCB5FA465737C8E28D11D8857FF /* RKHTTPUtilities.h */,
+				41CF6177AF4E34E584D831DC351993F7 /* RKHTTPUtilities.m */,
+				4AD92583A2B861A434D1B551B39EF18F /* RKMapperOperation.h */,
+				4292B9DAAD5573AE95163441E84E4F46 /* RKMapperOperation.m */,
+				00F029FE96A6A2050419CCC131198A66 /* RKMapperOperation_Private.h */,
+				3910FCFC692105013DABCDB1ABABC2E3 /* RKMapping.h */,
+				6A50A500482DB811E42A641962AE229D /* RKMapping.m */,
+				8EDF9209D453079A6EE99C84CD546F61 /* RKMappingErrors.h */,
+				FADF84FC03373294412BE3F4853BC157 /* RKMappingOperation.h */,
+				FEDE930C2234BBEB198BCB8EE6297277 /* RKMappingOperation.m */,
+				4BC16CF62FDB09D51F51D86A14C68058 /* RKMappingOperationDataSource.h */,
+				73282929762630CC3F2C94DC7D4E8AC4 /* RKMappingResult.h */,
+				764A0F8EF15CD202361039870FAE935D /* RKMappingResult.m */,
+				290709614A4BB4412DAD446930B69E7B /* RKObjectMapping.h */,
+				F9D21D745BE5B33F1F1AA929FEE9F285 /* RKObjectMapping.m */,
+				8023982E8F170D0940564C237D75DCA5 /* RKObjectMappingMatcher.h */,
+				8AEFE40387483923AB3A63FF4C80CCD1 /* RKObjectMappingMatcher.m */,
+				D3B947BA9A9A64A1E987777B3DD75DB1 /* RKObjectMappingOperationDataSource.h */,
+				79621DA6B3F9EB0F1D28217A04323AB9 /* RKObjectMappingOperationDataSource.m */,
+				2FEC34C498531C87A8B1556A7E1057D1 /* RKObjectUtilities.h */,
+				3DF8A29DD8334C8C4087C88E7D718BEA /* RKObjectUtilities.m */,
+				D979CBC6CA76E74EC4FCAAD7AC39667E /* RKPropertyInspector.h */,
+				18E03C3B0A5330D11E23F085D9006776 /* RKPropertyInspector.m */,
+				325105434D415948B9DB589B0086CC6A /* RKPropertyMapping.h */,
+				D991B30E9A80489AD29E270A6C82C6D9 /* RKPropertyMapping.m */,
+				706877871DFDC40332B5138E64C33319 /* RKRelationshipMapping.h */,
+				C3F79E04A23D84A86E0AD15293E3B29A /* RKRelationshipMapping.m */,
+				B30F258438DB91647461DA1B08DAB44A /* RKValueTransformers.h */,
+				B4CD5BA383E50BECE0D2E569D377E3D1 /* RKValueTransformers.m */,
+			);
+			name = ObjectMapping;
+			sourceTree = "<group>";
+		};
+		7768179CB05E7F0C5F43B5BFD9110D9C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7460D8AD9AE2D24A33683010C28D4755 /* SOCKit.xcconfig */,
+				9A8E639AF48D938813CF0860E9FF8754 /* SOCKit-Private.xcconfig */,
+				4FE09EB1BAFD6593655A66644AD9F2C0 /* SOCKit-dummy.m */,
+				D05CE9E946F33F290080BCA68C7ABEB1 /* SOCKit-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SOCKit";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				F4CDA5FA9197A41E0081E84F932906EB /* Frameworks */,
+				A5B3C1991F96C50AB7C15280930F08C6 /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				D2A636A9C18BD7004E6A06A37EC1DA10 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		82616C4BC52454EEB301103835E8F277 /* SOCKit */ = {
+			isa = PBXGroup;
+			children = (
+				96A98B34414903617DDCC4DD35D0ACC8 /* SOCKit.h */,
+				89622454B6309852AD9687B0820C02B0 /* SOCKit.m */,
+				7768179CB05E7F0C5F43B5BFD9110D9C /* Support Files */,
+			);
+			path = SOCKit;
+			sourceTree = "<group>";
+		};
+		8EEFA7B8E0F9DAA54014E55DB597EA84 /* TransitionKit */ = {
+			isa = PBXGroup;
+			children = (
+				A4A680F7D1ECDC94C58E9A54FA04578A /* TKEvent.h */,
+				BEE7907E67E85FC4E3CD2A4810772030 /* TKEvent.m */,
+				148F1E6E44AD2F1F5F390EE08DACEEB7 /* TKState.h */,
+				F6CF5E1E55E788ECE32C445B2B78632D /* TKState.m */,
+				231AA44A23A622B6988604B70A18848E /* TKStateMachine.h */,
+				44DC31A9F1A34A204D740109D0FAAD2E /* TKStateMachine.m */,
+				4DBF74A26D98E002F72EC9BF9EE8CF88 /* TransitionKit.h */,
+				DD6AD5E6050EE86435564CD4E1516CEE /* Support Files */,
+			);
+			path = TransitionKit;
+			sourceTree = "<group>";
+		};
+		A5B3C1991F96C50AB7C15280930F08C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF159BE31A7DC056FFD5931C4B03A238 /* AFNetworking */,
+				F9FDF6DA37C5F9BCB70C4F3AD979665D /* RestKit */,
+				82616C4BC52454EEB301103835E8F277 /* SOCKit */,
+				8EEFA7B8E0F9DAA54014E55DB597EA84 /* TransitionKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C165491CA8EB3737AE36C27FF4435400 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				427BD3537D0EBA10549EC696CEDA6342 /* CFNetwork.framework */,
+				8F38E5FC8E986467DB0DD1429904B1AA /* CoreData.framework */,
+				3C27C75D75D34F2A597016B095BCF234 /* CoreGraphics.framework */,
+				E1DDBE6FFC3BE7052C203A4A205C2383 /* Foundation.framework */,
+				A6125ABEBC1DA76F369DE1378E0C4840 /* MobileCoreServices.framework */,
+				C923E83DEF45FA270F6DA061308BECD0 /* Security.framework */,
+				16BE3EA8E2943BB5266B24546F1AE43D /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44AD8C146B32A9B3E89DE62FF04F7D6B /* libAFNetworking.a */,
+				6BB70880466C67D275E9C6EF7BEF1891 /* libPods-Meteo.a */,
+				618ECAF3B06F68413D3551653E5E7BC3 /* libRestKit.a */,
+				A54BA714770BA8ED007819BC352FEB7C /* libSOCKit.a */,
+				970788F39FB8C86AF9DC345961AC08A8 /* libTransitionKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2A636A9C18BD7004E6A06A37EC1DA10 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				58C646E89F301BBBF1FFACA5587DE1FD /* Pods-Meteo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		DD6AD5E6050EE86435564CD4E1516CEE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				566C579D57DF66EFADD2710826CE4548 /* TransitionKit.xcconfig */,
+				86A22C882A8B22397454B0086A19C5DC /* TransitionKit-Private.xcconfig */,
+				9B0B8A86662BAF073B0DD514BD38CE69 /* TransitionKit-dummy.m */,
+				CFEA67686697FF15CFBCC29737D09E21 /* TransitionKit-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TransitionKit";
+			sourceTree = "<group>";
+		};
+		EF159BE31A7DC056FFD5931C4B03A238 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				34BB5F5855B59D16D43EAD5DA7CC24FE /* AFHTTPClient.h */,
+				C3E74C122660185D780701DAC5AAB96A /* AFHTTPClient.m */,
+				02678B277439AC2B2F46125069D4F97B /* AFHTTPRequestOperation.h */,
+				11BACD2226EFBFFA09E885E4F3BA2124 /* AFHTTPRequestOperation.m */,
+				12621C611AAE3F1230A43C0582093FD9 /* AFImageRequestOperation.h */,
+				951E7595147E1F71FA0ED4F4EB2C2AB6 /* AFImageRequestOperation.m */,
+				3D83439F2E3A675606AE7A2095BF48C3 /* AFJSONRequestOperation.h */,
+				90C1ED332D2B386DA8BB2B7A604AAD98 /* AFJSONRequestOperation.m */,
+				18592ABFE20918FA4D181FDA5CC049EB /* AFNetworkActivityIndicatorManager.h */,
+				459E5C0E413C21937E5D65E4DA13EBEE /* AFNetworkActivityIndicatorManager.m */,
+				98ECCCAEFB9CB0B63A19FC02F5564E8E /* AFNetworking.h */,
+				79540B3FFADC0AE12E9E3B53416485A0 /* AFPropertyListRequestOperation.h */,
+				790A435C949F0964A302611CDAAD2792 /* AFPropertyListRequestOperation.m */,
+				E122CC2FA4220A705DE30BDC8A47D7B2 /* AFURLConnectionOperation.h */,
+				B3C5D952C5C4B16A4A95BB58E382884F /* AFURLConnectionOperation.m */,
+				9780F02EFBD4FF441849EDDAE2483A6E /* AFXMLRequestOperation.h */,
+				16AC912ACD90DCC59FEE8E31740BDCE5 /* AFXMLRequestOperation.m */,
+				179DEF6FC8BBB9AA12896F2895C86927 /* UIImageView+AFNetworking.h */,
+				5E3465F41EA2400B37708263E18B49B6 /* UIImageView+AFNetworking.m */,
+				076A99A6353D0B530101C34CC1361919 /* Support Files */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		F4CDA5FA9197A41E0081E84F932906EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C165491CA8EB3737AE36C27FF4435400 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9A12FB2EA4A5C2866422BFD9564D8D0 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				D1E2475209CA72C7EA50B63826705077 /* RKDictionaryUtilities.h */,
+				5F5C397CB33F17ABDDFF90CEC1735954 /* RKDictionaryUtilities.m */,
+				4225EAAD37AA1DF99662143882F16CEA /* RKDotNetDateFormatter.h */,
+				41133C938B0260349E006498CD38BCE1 /* RKDotNetDateFormatter.m */,
+				6A762AD5A3276953D1DF8584EE0F20D2 /* RKErrors.h */,
+				A566D50814933723B560516065388785 /* RKErrors.m */,
+				7359390255933B5B9D578F1BC8E22F04 /* RKISO8601DateFormatter.h */,
+				40AD061A150E8E8FDE1E306FA9C5F9D5 /* RKISO8601DateFormatter.m */,
+				7998A464D017359BEE65FEBB90496888 /* RKLog.h */,
+				E676AABBAEF82BE6C6B9CE746FBA5D75 /* RKLog.m */,
+				FF19DD212B256A88339A4989D45C5256 /* RKMIMETypeSerialization.h */,
+				DFD7B2395FFB2A828D4A1CA950A8FF60 /* RKMIMETypeSerialization.m */,
+				274517D33C7A0D639A19B3A232CEB3C9 /* RKMIMETypes.h */,
+				90E503ED6E055CCAEB8E9EA9226BA1CD /* RKMIMETypes.m */,
+				31D6F69CA0581D58F0D270851E9738C6 /* RKMacros.h */,
+				0592F2E9506F761FD1AD98DB9BAD22BA /* RKNSJSONSerialization.h */,
+				9328A45696944593EB5C01FBC984B844 /* RKNSJSONSerialization.m */,
+				E81D9781D697890D1D58DE1DC8015BE1 /* RKOperationStateMachine.h */,
+				062779499AAD108B9084D72C43BCE433 /* RKOperationStateMachine.m */,
+				63E7EFDFA442DA79F8FBD79B5ECF54A5 /* RKPathMatcher.h */,
+				5E89EE8DC55A21754CF9396B1167B650 /* RKPathMatcher.m */,
+				E7F39151205CE958EA5685375E4D45C8 /* RKPathUtilities.h */,
+				FCA4CD7317D79DA62CC640E4A6F1017B /* RKPathUtilities.m */,
+				673ECFB16815327FBEEDB28B6EC53B33 /* RKSerialization.h */,
+				8CD57368E2225672B93A873EB6B8777C /* RKURLEncodedSerialization.h */,
+				95D5E5D0E723FEB82A4906E21D24CFF4 /* RKURLEncodedSerialization.m */,
+				369E7D47A80FD4BF03E148201402A1A6 /* lcl_config_components_RK.h */,
+				962B4FD5E59F444A48C86AF6986C86CE /* lcl_config_extensions_RK.h */,
+				81DE187DB8EDBAF4253FEAC14D9AAABA /* lcl_config_logger_RK.h */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		F9FDF6DA37C5F9BCB70C4F3AD979665D /* RestKit */ = {
+			isa = PBXGroup;
+			children = (
+				4ECB1C6ED36AC9222763ED3C5C59A332 /* Core */,
+				622A7C3883205C93E474CE02E12DF770 /* CoreData */,
+				3E78D62E27600C7F30843B04CA286602 /* Network */,
+				7390F242DF51205BBAC41697C2106DBB /* ObjectMapping */,
+				F9A12FB2EA4A5C2866422BFD9564D8D0 /* Support */,
+				548D99295E32803CB87798AAFC787ABA /* Support Files */,
+			);
+			path = RestKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1C907233E3D209254ACAFB1C2B6AA907 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B16834950DD573C7C0BA0ED504943096 /* CoreData.h in Headers */,
+				5D508A3891FACA8FB8D58412B8B683A9 /* LCLNSLog_RK.h in Headers */,
+				F9DCCE08E191B476896143A29CE90694 /* NSManagedObject+RKAdditions.h in Headers */,
+				C4B7C53CC4AB2DA551D9A5C6E57DC66C /* NSManagedObjectContext+RKAdditions.h in Headers */,
+				7F78BD3202930A455F4390396DEECEE6 /* Network.h in Headers */,
+				6D10724F0733C72C652F050FB33A3B2C /* ObjectMapping.h in Headers */,
+				FD8C7B958ECF1DA3BF71F7C60C33E54F /* RKAttributeMapping.h in Headers */,
+				EB9574475688BEA349D282F727A6CF31 /* RKConnectionDescription.h in Headers */,
+				7859CC31620D4E4D055D9F60BAF30265 /* RKDictionaryUtilities.h in Headers */,
+				BBD60540B2E3A07D7AC2128F3ED6BDCC /* RKDotNetDateFormatter.h in Headers */,
+				0D696124B78E63DA891A1B1B4CCA1137 /* RKDynamicMapping.h in Headers */,
+				420486885FB74B0AC5C30A6FC91A6A20 /* RKEntityByAttributeCache.h in Headers */,
+				2D0DDBC7E9F32ADFA12D6BC74B988EAC /* RKEntityCache.h in Headers */,
+				56562862D100917FE0D243A7E41F3B24 /* RKEntityMapping.h in Headers */,
+				6504EB1DC5A89849B741915ED383ADAE /* RKErrorMessage.h in Headers */,
+				F3A33EA6590D6F036B845D4E3E843F24 /* RKErrors.h in Headers */,
+				A6FBD8CAB6AD469A511BB6BBC24E23FE /* RKFetchRequestManagedObjectCache.h in Headers */,
+				4843C1B0ED00B08E293B87F069EA2CCC /* RKHTTPRequestOperation.h in Headers */,
+				C8BF225550DD06004314CF072399AA80 /* RKHTTPUtilities.h in Headers */,
+				BF6024B8E7C12A48DA5AB79DFF74A25C /* RKISO8601DateFormatter.h in Headers */,
+				D0BCD43C36A8B60B4845C05155C908B5 /* RKInMemoryManagedObjectCache.h in Headers */,
+				B8320E8A8DE37B6FF131081268F8FC8E /* RKLog.h in Headers */,
+				F424EC69C871680B2162527C195DE8BD /* RKMIMETypeSerialization.h in Headers */,
+				756438993C17D23A4A9F2D3F1514A856 /* RKMIMETypes.h in Headers */,
+				8727136B59404A20F516B7A42F0CDD33 /* RKMacros.h in Headers */,
+				149387570D8081AD3BD518BA096590B5 /* RKManagedObjectCaching.h in Headers */,
+				F0A6E2A0E39E7BDDF285E1969AB5E119 /* RKManagedObjectImporter.h in Headers */,
+				A0F5DB109A9AFF7ECDB3D5C541BC62D5 /* RKManagedObjectMappingOperationDataSource.h in Headers */,
+				C43890E907CA5F03660DA2BF9365D9E0 /* RKManagedObjectRequestOperation.h in Headers */,
+				9FC4D6D7A2BD15A14476E0AE133CD13E /* RKManagedObjectStore.h in Headers */,
+				A03A7EBEED26A40DE674E68F3CFD0B4A /* RKMapperOperation.h in Headers */,
+				CF29BD7AB16D83A37732955664BC85ED /* RKMapperOperation_Private.h in Headers */,
+				D365E898441E6F38C34169E9F9DFE8B8 /* RKMapping.h in Headers */,
+				1FC88DA09076785A6E404CCECB55BBB1 /* RKMappingErrors.h in Headers */,
+				8E50BD3653E718BE147C78E4E23DB006 /* RKMappingOperation.h in Headers */,
+				EE2BC2CD774CD15AC2521426CF5C3AE7 /* RKMappingOperationDataSource.h in Headers */,
+				AB4DA060BFCC0F139269418990F583AA /* RKMappingResult.h in Headers */,
+				0D1F569D4E3D29E1BB213C566AD19A92 /* RKNSJSONSerialization.h in Headers */,
+				0B4FABB3025D28EC73FF4C6B4F80D97B /* RKObjectManager.h in Headers */,
+				8732A6715C7A35F2716784A9B5C64198 /* RKObjectMapping.h in Headers */,
+				8039D4F7C97981D7FED45E19B9C49422 /* RKObjectMappingMatcher.h in Headers */,
+				2A585FC4FA4B06614EDD28D7CEF1C9A5 /* RKObjectMappingOperationDataSource.h in Headers */,
+				2EF01DD452F931DF0878FB899EF2EA89 /* RKObjectParameterization.h in Headers */,
+				05E9E9A15AD4268CC91531FD5332C3DF /* RKObjectRequestOperation.h in Headers */,
+				A3863C8B2256453580138E3C35ED1BB4 /* RKObjectUtilities.h in Headers */,
+				10B92A51DBAE29AC9569536B2BA73385 /* RKOperationStateMachine.h in Headers */,
+				7AB7DD6285CC6EC861015B91631D52A2 /* RKPaginator.h in Headers */,
+				13122F7157228E9BA4A2750224EDE16A /* RKPathMatcher.h in Headers */,
+				6CE71B165CD4ECA7B15C59352AC84D86 /* RKPathUtilities.h in Headers */,
+				88E164EE5955F9DD9120F2DF89079DD8 /* RKPropertyInspector+CoreData.h in Headers */,
+				F46BFC46525F2C3D217DDB94A24DD54C /* RKPropertyInspector.h in Headers */,
+				96EB3733B1A9497107314C41CA38979E /* RKPropertyMapping.h in Headers */,
+				314C344D55BEF1920C341CBEA3DFC19F /* RKRelationshipConnectionOperation.h in Headers */,
+				7DC80C251935D5C0A6757261318BA8AB /* RKRelationshipMapping.h in Headers */,
+				BA59F995BDBE8169C71B0DF19DFE8C84 /* RKRequestDescriptor.h in Headers */,
+				7D22BAE286A5D6157BC6CD302D818783 /* RKRequestOperationSubclass.h in Headers */,
+				040839E2BE5CBDAAFB4B1E077885AA23 /* RKResponseDescriptor.h in Headers */,
+				7A8B705B7AFD631F42CAD3943D2D7801 /* RKResponseMapperOperation.h in Headers */,
+				EA9570AAAFD7AFB5D2FC21007CA09E57 /* RKRoute.h in Headers */,
+				3A2A2A1D59E3C90BC73A85AF6BC8A80B /* RKRouteSet.h in Headers */,
+				DF2C02265C3DAB107B463273FDD8D998 /* RKRouter.h in Headers */,
+				FC46368CD5A89AD881B7E3197FDD8B8F /* RKSerialization.h in Headers */,
+				C0828D63B30DCBA39CF79AADDCBE6343 /* RKURLEncodedSerialization.h in Headers */,
+				7BFDE5E643616D3C15E1022E34F204ED /* RKValueTransformers.h in Headers */,
+				3BB33B38A35AF45DA1BFF1B278A6E043 /* RestKit.h in Headers */,
+				EF85E1F743431166EB24344427FC66B3 /* Search.h in Headers */,
+				FB4E89474C8BD529095023BE5FFCDCEA /* Support.h in Headers */,
+				C9F1F1E835307193F31476112730717A /* Testing.h in Headers */,
+				A74FC64B0A119C2C622D113F3148006E /* lcl_RK.h in Headers */,
+				9586046250659E0210D0AD4E0C35AF70 /* lcl_config_components_RK.h in Headers */,
+				6853E5B824097C033FBC79726449CE82 /* lcl_config_extensions_RK.h in Headers */,
+				26E07C2942CEF4E1445BE723E7E339D2 /* lcl_config_logger_RK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39DA8130F7FA190334316A6A94448FA3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ACB69DF19D66A70663793255C9DB308 /* TKEvent.h in Headers */,
+				5F1D0ABBA332328214025CB3BA1CB18B /* TKState.h in Headers */,
+				DC4721895184FC1EFBF42C9E5E65A929 /* TKStateMachine.h in Headers */,
+				54FD41E5A38D2590C69BA98727DB35CC /* TransitionKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AAB5C9C35D21E7DE9BABB9F3AE359CA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44EEBB71B919C890EC133515DAADA53E /* SOCKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A23727E20EF31EB246C1FBA12A267E92 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				430B54508FF844031E6FFCCF142AEC84 /* AFHTTPClient.h in Headers */,
+				83CABA088DF152D1E60EA8889A61C0F3 /* AFHTTPRequestOperation.h in Headers */,
+				9E2C8197821794E7D72C90F6B79BAE4C /* AFImageRequestOperation.h in Headers */,
+				7BEDBF67D16202722DF3D242D782E1F2 /* AFJSONRequestOperation.h in Headers */,
+				D52F8FD8932A0FF052BECCC49EC34DB0 /* AFNetworkActivityIndicatorManager.h in Headers */,
+				65AA74C75740B0BE7A6BBBB4D4AE9DD7 /* AFNetworking.h in Headers */,
+				9E1AAF8FCCC6ABB76ED2E6B7392622EB /* AFPropertyListRequestOperation.h in Headers */,
+				60114CED591C25CB18E49F7209B53399 /* AFURLConnectionOperation.h in Headers */,
+				F293100D59E4E0BFB56EFD43F607B8FE /* AFXMLRequestOperation.h in Headers */,
+				7CF0747CC595851B71817279B0053179 /* UIImageView+AFNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		71C15DFDEA6DB080EF012988DCED9A93 /* AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A69E857B11D32979E8B041267687CE4D /* Build configuration list for PBXNativeTarget "AFNetworking" */;
+			buildPhases = (
+				BDC3AED675CEF3DFC23BF01CD4C51AD4 /* Sources */,
+				798B120416A2AE98C2C71B50DBF82838 /* Frameworks */,
+				A23727E20EF31EB246C1FBA12A267E92 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFNetworking;
+			productName = AFNetworking;
+			productReference = 44AD8C146B32A9B3E89DE62FF04F7D6B /* libAFNetworking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7F2062E4E785F61FC4EE5F6F9C3B2199 /* TransitionKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8939B63E30C1CB9C4A1A9E82FE93EFF /* Build configuration list for PBXNativeTarget "TransitionKit" */;
+			buildPhases = (
+				5265A152C88852F10D215CF16900F85D /* Sources */,
+				E0167A0981FB8495FD0F47CD2E89C94B /* Frameworks */,
+				39DA8130F7FA190334316A6A94448FA3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TransitionKit;
+			productName = TransitionKit;
+			productReference = 970788F39FB8C86AF9DC345961AC08A8 /* libTransitionKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9EB2A74BA4528516496904BD302E2CDE /* Pods-Meteo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 755971C85E5990C9AAFF28AA5FC40097 /* Build configuration list for PBXNativeTarget "Pods-Meteo" */;
+			buildPhases = (
+				92EC50E25ED1C5D156929CC822B950A8 /* Sources */,
+				E750FB9EB5B957FD4FE986F87D2D42DC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D29E7D78CB32EB0931DB131DA52C9DA /* PBXTargetDependency */,
+				5CB3FDCF8397CA8AEF9BECE415CC2AD8 /* PBXTargetDependency */,
+				FB9B5FA8EBB41570CD88C56C1B0FDE45 /* PBXTargetDependency */,
+				2567F07B0320B3F2B5195A4D178A7225 /* PBXTargetDependency */,
+			);
+			name = "Pods-Meteo";
+			productName = "Pods-Meteo";
+			productReference = 6BB70880466C67D275E9C6EF7BEF1891 /* libPods-Meteo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A2770197345BCE1622568AECE6B8E824 /* SOCKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE9B407615E85CA189C0133A977CB6E4 /* Build configuration list for PBXNativeTarget "SOCKit" */;
+			buildPhases = (
+				3B27D6A53A40DB67B708280465D0F21C /* Sources */,
+				5972652DA8E3CB6256417EE7BCB541BA /* Frameworks */,
+				8AAB5C9C35D21E7DE9BABB9F3AE359CA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SOCKit;
+			productName = SOCKit;
+			productReference = A54BA714770BA8ED007819BC352FEB7C /* libSOCKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C6088836E877C4848489B6A41694A7AE /* RestKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F493BB215F5220627897256D598E4D77 /* Build configuration list for PBXNativeTarget "RestKit" */;
+			buildPhases = (
+				E1B910357E2599AD4BD7EDE9B81046C5 /* Sources */,
+				4A01C15E6A0650DFAD56F7C67CFB09AB /* Frameworks */,
+				1C907233E3D209254ACAFB1C2B6AA907 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D304CDF8C0ADDF888BB79E212C2D49D /* PBXTargetDependency */,
+				ECA740BFC856E0B0E7FE2A86A10A9921 /* PBXTargetDependency */,
+				FCA91E11A661598D236E94043FBF344E /* PBXTargetDependency */,
+			);
+			name = RestKit;
+			productName = RestKit;
+			productReference = 618ECAF3B06F68413D3551653E5E7BC3 /* libRestKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71C15DFDEA6DB080EF012988DCED9A93 /* AFNetworking */,
+				9EB2A74BA4528516496904BD302E2CDE /* Pods-Meteo */,
+				C6088836E877C4848489B6A41694A7AE /* RestKit */,
+				A2770197345BCE1622568AECE6B8E824 /* SOCKit */,
+				7F2062E4E785F61FC4EE5F6F9C3B2199 /* TransitionKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B27D6A53A40DB67B708280465D0F21C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AED7DD46159F1525CBAED2B765B6FBB2 /* SOCKit-dummy.m in Sources */,
+				EB73AF4C9D61D61F7B1BB0F6C573118D /* SOCKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5265A152C88852F10D215CF16900F85D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35C1DC23FC341D8E915FAA2C0D2C7ADE /* TKEvent.m in Sources */,
+				22BFC61B09C79D5F08A8D99CAE27F521 /* TKState.m in Sources */,
+				A5440219EB91F2FE190C2BC45F7D9AF5 /* TKStateMachine.m in Sources */,
+				9D52BBD20E91D08DD9F17F34ECBAF1C8 /* TransitionKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92EC50E25ED1C5D156929CC822B950A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CE2D36EC4FA80719B383A05C77B4E23 /* Pods-Meteo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDC3AED675CEF3DFC23BF01CD4C51AD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6FAA58163F06BAB4E3A66372E337A55 /* AFHTTPClient.m in Sources */,
+				EF6FEC4712BC05E70C80EF37FB80775F /* AFHTTPRequestOperation.m in Sources */,
+				C91B7943E220EBB47F7D56380D2D0762 /* AFImageRequestOperation.m in Sources */,
+				1C78C9880036DC83D1D60EE7295F2AD9 /* AFJSONRequestOperation.m in Sources */,
+				39DBD867F88EF67426FC4C9C72264129 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				67F2940C6D5C9505438BC4AA77C72B67 /* AFNetworking-dummy.m in Sources */,
+				19727379D398B5E29E1A9C7D88CABF71 /* AFPropertyListRequestOperation.m in Sources */,
+				DA1EC3040171DCBC74319307445420D8 /* AFURLConnectionOperation.m in Sources */,
+				382B91C8BC56760020BA7FD8F92F80B2 /* AFXMLRequestOperation.m in Sources */,
+				3D08F5922C76BAAB8F4F1D9D6E53F7CB /* UIImageView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1B910357E2599AD4BD7EDE9B81046C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD86D4F33FBC1B7B962F993B298220D7 /* LCLNSLog_RK.m in Sources */,
+				09CEDE6FB92CC4CC92DFB8958642F7D8 /* NSManagedObject+RKAdditions.m in Sources */,
+				362FE599782174A5B4F410255EB3E0E0 /* NSManagedObjectContext+RKAdditions.m in Sources */,
+				71E1E547CA889011D53DDCF9A0E1953B /* RKAttributeMapping.m in Sources */,
+				400B89318102687DFC8588B18DF82162 /* RKConnectionDescription.m in Sources */,
+				D51C1B3AD96672B1E6CCE25EEE1FC0A0 /* RKDictionaryUtilities.m in Sources */,
+				7B8988B83D2CA254D830BDCE50F50647 /* RKDotNetDateFormatter.m in Sources */,
+				9394B8D958E0D1545F0D21090DA090AC /* RKDynamicMapping.m in Sources */,
+				C1DE2B68741B00D15B6329A2229D6CC9 /* RKEntityByAttributeCache.m in Sources */,
+				46CA6882AD91C96A8A110FFE43200736 /* RKEntityCache.m in Sources */,
+				395DEE05F85ACC4693B739A6CEDF7D1D /* RKEntityMapping.m in Sources */,
+				F89B6894DCB23F398F2A2C55224F1A8C /* RKErrorMessage.m in Sources */,
+				7C49FE763DFADDDA8EB752F30D7A7EB8 /* RKErrors.m in Sources */,
+				53539FCD6DA17C287099604A036B579D /* RKFetchRequestManagedObjectCache.m in Sources */,
+				8105B9CA801CFD73FD43B95B7D02649A /* RKHTTPRequestOperation.m in Sources */,
+				53E6B32AF6CB988E5330A54058AD268B /* RKHTTPUtilities.m in Sources */,
+				2C3E7CB8F586A3CFDDCDAF80FD5DBC17 /* RKISO8601DateFormatter.m in Sources */,
+				DB994907F657A6C3C7530C7B9F50F514 /* RKInMemoryManagedObjectCache.m in Sources */,
+				39D96ECB3324FC6929C0B77CD414C3C7 /* RKLog.m in Sources */,
+				4C468D908122718B85D3DD6C383FD534 /* RKMIMETypeSerialization.m in Sources */,
+				67E512B373D05D8012BE207E3177BCFD /* RKMIMETypes.m in Sources */,
+				070347FEEDA6202600B2172CDF885025 /* RKManagedObjectImporter.m in Sources */,
+				694838E2D70914799850367042AA0451 /* RKManagedObjectMappingOperationDataSource.m in Sources */,
+				AAAE560E85E1BFA6743338561F465A01 /* RKManagedObjectRequestOperation.m in Sources */,
+				C524F7D01A45A3D670CF4FCAE810AD87 /* RKManagedObjectStore.m in Sources */,
+				E7014267980ECEEBAF7FC0C342FCF734 /* RKMapperOperation.m in Sources */,
+				2D3A825F2066A97844B00DED46D1AFB5 /* RKMapping.m in Sources */,
+				02D89BE294B12D477026737C5D87033D /* RKMappingOperation.m in Sources */,
+				53C189EB4CDF0D4489AC15B740E3B512 /* RKMappingResult.m in Sources */,
+				BE6AD2E5F8A524E899C3AA4A26B6CD68 /* RKNSJSONSerialization.m in Sources */,
+				CDC1514EB939F8216FD693C6C6A1EE1F /* RKObjectManager.m in Sources */,
+				5C414D0ABBD3181938C5F46325B7A9D0 /* RKObjectMapping.m in Sources */,
+				3E998CF9B10DF1C4896E0200CF8F0D84 /* RKObjectMappingMatcher.m in Sources */,
+				8F56AA3253ACE07AB1FBA8EFB93C5A76 /* RKObjectMappingOperationDataSource.m in Sources */,
+				5A28F6F8A1FF0A077C65D8B7E2F1FAEF /* RKObjectParameterization.m in Sources */,
+				B2105F89B69E6842DFBC143EDDDD49F9 /* RKObjectRequestOperation.m in Sources */,
+				7BF2C631259BEA355F2B1A4D6E06272F /* RKObjectUtilities.m in Sources */,
+				4FE14B275E3150F8939E7670DE14CEC4 /* RKOperationStateMachine.m in Sources */,
+				1FAAC965AB8D9E0EA552259B6001674B /* RKPaginator.m in Sources */,
+				3597447EE64357BAFDAEA3043953CFCA /* RKPathMatcher.m in Sources */,
+				BD5BEEE47EE4CE80620EDBC04F96764C /* RKPathUtilities.m in Sources */,
+				9C8C296F501CE897F584A9CA96A55410 /* RKPropertyInspector+CoreData.m in Sources */,
+				F02934BCEB4E773CF819D95082F7AD51 /* RKPropertyInspector.m in Sources */,
+				D999061E6D9187E7736217BBE0D24C8D /* RKPropertyMapping.m in Sources */,
+				E92B8D003889F7E9C15C55E2D491ADCC /* RKRelationshipConnectionOperation.m in Sources */,
+				F5B44DD17A0FE878169970958C2E668A /* RKRelationshipMapping.m in Sources */,
+				B2AC7F664BBB238518D899249C9F5CB2 /* RKRequestDescriptor.m in Sources */,
+				5F3D9AEEE760BF9FA3B82A9F1A8DFECB /* RKResponseDescriptor.m in Sources */,
+				4D55B2B4321B8BD868F600BB71A70FE2 /* RKResponseMapperOperation.m in Sources */,
+				6FC86F36770EBDAF446CC83FB714842E /* RKRoute.m in Sources */,
+				982BA8E42AB025F38E6576424E87798C /* RKRouteSet.m in Sources */,
+				3DE3496E7E88EFE070FB7D428575C0F1 /* RKRouter.m in Sources */,
+				0C0230479F62A54DFF308DB4E2A75A51 /* RKURLEncodedSerialization.m in Sources */,
+				110EE4DAB6591F217C8B603775D92820 /* RKValueTransformers.m in Sources */,
+				B96F691F22FAF58BD9E7FB2A7708B587 /* RestKit-dummy.m in Sources */,
+				CDB3B23FC97C1A23CA86D0B35FD14F5F /* lcl_RK.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D29E7D78CB32EB0931DB131DA52C9DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 71C15DFDEA6DB080EF012988DCED9A93 /* AFNetworking */;
+			targetProxy = F24FF0C34A28FE961907913853F4131E /* PBXContainerItemProxy */;
+		};
+		2567F07B0320B3F2B5195A4D178A7225 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TransitionKit;
+			target = 7F2062E4E785F61FC4EE5F6F9C3B2199 /* TransitionKit */;
+			targetProxy = 123F3EB9964256478C8BF68934F73A25 /* PBXContainerItemProxy */;
+		};
+		5CB3FDCF8397CA8AEF9BECE415CC2AD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			target = C6088836E877C4848489B6A41694A7AE /* RestKit */;
+			targetProxy = 34CEB8F8486B971A5AB7370F8EAC077F /* PBXContainerItemProxy */;
+		};
+		5D304CDF8C0ADDF888BB79E212C2D49D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 71C15DFDEA6DB080EF012988DCED9A93 /* AFNetworking */;
+			targetProxy = 98456EA81E57503AF47D68FC46A26631 /* PBXContainerItemProxy */;
+		};
+		ECA740BFC856E0B0E7FE2A86A10A9921 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SOCKit;
+			target = A2770197345BCE1622568AECE6B8E824 /* SOCKit */;
+			targetProxy = C6D55E247BE1772A707ADBE85EC93E46 /* PBXContainerItemProxy */;
+		};
+		FB9B5FA8EBB41570CD88C56C1B0FDE45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SOCKit;
+			target = A2770197345BCE1622568AECE6B8E824 /* SOCKit */;
+			targetProxy = 9F2F4B85980E937410E788F87645E019 /* PBXContainerItemProxy */;
+		};
+		FCA91E11A661598D236E94043FBF344E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TransitionKit;
+			target = 7F2062E4E785F61FC4EE5F6F9C3B2199 /* TransitionKit */;
+			targetProxy = CDE3806BB29678A6B832D81B8D622EC0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1E9BF3450423CF6AF502CE86350D7CEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8910B88776FB62F8860BBDD02152D0A /* Pods-Meteo.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3642447BBC4548830A51D3730F0506DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86A22C882A8B22397454B0086A19C5DC /* TransitionKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TransitionKit/TransitionKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3BA8A17F0FC631753101D3868B878DAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5AB23BB67CF6470DFD33DA31222656E /* AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3BCCA7250786B7C37217BC751D569085 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A8E639AF48D938813CF0860E9FF8754 /* SOCKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SOCKit/SOCKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		678ABD6B0F67A87E5016B6FBB8F82B5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 345B791AE03CA406E483C13371F1BF14 /* RestKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RestKit/RestKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		6BC4232F9E635A4FDD530EEE25092857 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86A22C882A8B22397454B0086A19C5DC /* TransitionKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TransitionKit/TransitionKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		7E75A355AD3155085B40D579041D19CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A8E639AF48D938813CF0860E9FF8754 /* SOCKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SOCKit/SOCKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		80AF780218BE413F83EFDA57F09E4DFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5C7A2B9A633A5F2FD485F349F27D6B3 /* Pods-Meteo.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A04C84C39268E527CE768DEF8C08CA1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5AB23BB67CF6470DFD33DA31222656E /* AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C074F63C9EE7CB4D8C618390A32CEC35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D2BA9C5477A1B42452003BAA3E45CF39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 345B791AE03CA406E483C13371F1BF14 /* RestKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RestKit/RestKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E43846B588E1892F3093F3B7082B6DFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C074F63C9EE7CB4D8C618390A32CEC35 /* Debug */,
+				E43846B588E1892F3093F3B7082B6DFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		755971C85E5990C9AAFF28AA5FC40097 /* Build configuration list for PBXNativeTarget "Pods-Meteo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E9BF3450423CF6AF502CE86350D7CEE /* Debug */,
+				80AF780218BE413F83EFDA57F09E4DFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A69E857B11D32979E8B041267687CE4D /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A04C84C39268E527CE768DEF8C08CA1E /* Debug */,
+				3BA8A17F0FC631753101D3868B878DAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE9B407615E85CA189C0133A977CB6E4 /* Build configuration list for PBXNativeTarget "SOCKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E75A355AD3155085B40D579041D19CC /* Debug */,
+				3BCCA7250786B7C37217BC751D569085 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8939B63E30C1CB9C4A1A9E82FE93EFF /* Build configuration list for PBXNativeTarget "TransitionKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3642447BBC4548830A51D3730F0506DB /* Debug */,
+				6BC4232F9E635A4FDD530EEE25092857 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F493BB215F5220627897256D598E4D77 /* Build configuration list for PBXNativeTarget "RestKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2BA9C5477A1B42452003BAA3E45CF39 /* Debug */,
+				678ABD6B0F67A87E5016B6FBB8F82B5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

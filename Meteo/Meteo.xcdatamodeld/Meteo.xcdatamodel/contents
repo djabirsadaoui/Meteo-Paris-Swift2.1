@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="14F27" minimumToolsVersion="Automatic">
+    <entity name="DJMCity" representedClassName="DJMCity" syncable="YES">
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="population" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="coord" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DJMCordinate" syncable="YES"/>
+    </entity>
+    <entity name="DJMCordinate" representedClassName="DJMCordinate" syncable="YES">
+        <attribute name="lat" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lon" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="DJMGlobalWeather" representedClassName="DJMGlobalWeather" syncable="YES">
+        <attribute name="cnt" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="cod" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="city" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DJMCity" syncable="YES"/>
+        <relationship name="list" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DJMWeatherWithDate" syncable="YES"/>
+    </entity>
+    <entity name="DJMMainTemperature" representedClassName="DJMMainTemperature" syncable="YES">
+        <attribute name="grnd_level" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="humidity" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="pressure" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="sea_level" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="temp" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="temp_kf" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="temp_max" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="temp_min" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="DJMWeather" representedClassName="DJMWeather" syncable="YES">
+        <attribute name="icon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="main" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wDescription" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="DJMWeatherWithDate" representedClassName="DJMWeatherWithDate" syncable="YES">
+        <attribute name="dt" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="dt_txt" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="main" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DJMMainTemperature" syncable="YES"/>
+        <relationship name="weathers" optional="YES" toMany="YES" minCount="1" deletionRule="No Action" destinationEntity="DJMWeather" spotlightIndexingEnabled="YES" syncable="YES"/>
+        <relationship name="wind" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DJMwind" syncable="YES"/>
+    </entity>
+    <entity name="DJMwind" representedClassName="DJMwind" syncable="YES">
+        <attribute name="deg" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="speed" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="DJMCity" positionX="-146" positionY="32" width="128" height="120"/>
+        <element name="DJMCordinate" positionX="-297" positionY="-54" width="128" height="73"/>
+        <element name="DJMGlobalWeather" positionX="7" positionY="192" width="128" height="118"/>
+        <element name="DJMMainTemperature" positionX="-515" positionY="-48" width="128" height="163"/>
+        <element name="DJMWeather" positionX="-648" positionY="120" width="128" height="90"/>
+        <element name="DJMWeatherWithDate" positionX="-351" positionY="134" width="128" height="118"/>
+        <element name="DJMwind" positionX="-549" positionY="243" width="128" height="73"/>
+    </elements>
+</model>
