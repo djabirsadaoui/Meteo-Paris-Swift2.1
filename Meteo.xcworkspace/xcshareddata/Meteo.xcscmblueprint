@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9B9FC0C58484766FA14202B3D194A6A96B03FEF1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "815AE768179BDDA31AE9BCC7C9F956390573BEAF" : 0,
+    "9B9FC0C58484766FA14202B3D194A6A96B03FEF1" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "48983D1C-C4E6-4020-9DC5-4C48B1B987F3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "815AE768179BDDA31AE9BCC7C9F956390573BEAF" : "",
+    "9B9FC0C58484766FA14202B3D194A6A96B03FEF1" : "Meteo\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Meteo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Meteo.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:djabirsadaoui\/LeMonde.fr-RSS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "815AE768179BDDA31AE9BCC7C9F956390573BEAF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:djabirsadaoui\/Meteo-Paris-Swift2.1.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9B9FC0C58484766FA14202B3D194A6A96B03FEF1"
+    }
+  ]
+}

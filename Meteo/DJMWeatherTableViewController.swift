@@ -18,9 +18,11 @@ class DJMWeatherTableViewController: UITableViewController {
     var isConnection:Bool = true
     @IBOutlet weak var headView:DJMHeadView!
     
+    @IBOutlet weak var addButton: UIBarButtonItem!
     override func viewDidLoad() {
         fileManager = DJMFileManager.sharedFileManager()
         getWeatherForCity(CITYID)
+       
         super.viewDidLoad()
     }
     

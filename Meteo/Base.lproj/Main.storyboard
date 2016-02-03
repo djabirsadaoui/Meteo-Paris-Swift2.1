@@ -353,6 +353,7 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="addButton" destination="1Jd-BU-uYJ" id="PNx-zL-kNI"/>
                         <outlet property="headView" destination="9Gr-1E-72s" id="HCC-W6-YpG"/>
                     </connections>
                 </tableViewController>
